@@ -1,0 +1,92 @@
+html {
+    /* background-color: #fff; */
+    background: url("asset/article-background.jpg") no-repeat center center fixed; 
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  body {
+    font-family: 'Times New Roman', Times, serif;
+    background: url("asset/article-background.jpg") no-repeat center center fixed; 
+    background-size: cover;
+    color: #000;
+    line-height: 1.6;
+  }
+  
+  .article-container {
+    margin: 40px;
+  }
+
+  .top-title {
+    margin-top: 10rem;
+    text-align: start;
+  }
+
+  .top-title h1 {
+    text-align: start;
+  }
+
+.text-title {
+  font-size: 28px;
+}
+
+.dalam-img {
+    margin-left: 0;
+    width: 70%;
+    display: block;
+}
+
+h1 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 22px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+  .subtitle {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 0;
+  }
+
+  hr {
+    border: none;
+    height: 10px; 
+    background: linear-gradient(to top, rgba(0,0,0,0.12), transparent);
+    margin: 2rem 0;
+  }
+  
+.author {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 22px;
+    text-align: start;
+}
+
+  img {
+    margin: 15px auto;
+    max-width: 100%;
+  }
+
+  .references {
+    margin-top: 40px;
+  }
+
+  .references p {
+    margin: 5px 0;
+    font-size: 22px;
+  }
+
+  a {
+    color: #0000ee;
+  }

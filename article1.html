@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cici Mandarin</title>
+    <link rel="icon" type="image/png" href="/asset/LogoSecondary.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="article.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/counterapi/dist/counter.browser.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <img src="/asset/LogoSecondary.png" alt="Logo" class="navbar-logo">
+        </div>
+        <div class="navbar-right">
+            <a href="index.html" class="navbar-link fontInterActive">HOME</a>
+            <a href="about.html" class="navbar-link fontInter">ABOUT US</a>
+            <div class="navbar-dropdown">
+                <a class="navbar-link fontInter" id="servicesDropdownBtn">SERVICES</a>
+                <div class="dropdown-content" id="servicesDropdownContent" style="display: none; z-index: 100000;">
+                    <div class="dropdown-service-list" style="flex-direction: row; width: 100%; align-items:flex-start; justify-content: center; padding: 10px; z-index: 1000;">
+                        <div class="dropdown-service-item" id="serviceLang" style="border-radius: 0 0 0 13px;">
+                            <img src="/asset/navbar/languages 1.png" alt="Language Course Expert" class="dropdown-service-img">
+                            <a href="service1.html" class="dropdown-link">Cici Language Course Expert</a>
+                        </div>
+                        <div class="dropdown-service-item" id="serviceStudy">
+                            <img src="/asset/navbar/congratulation 1.png" alt="Study Abroad Expert" class="dropdown-service-img">
+                            <a href="service2.html" class="dropdown-link">Cici Study Abroad Expert</a>
+                        </div>
+                        <div class="dropdown-service-item" id="serviceTour">
+                            <img src="/asset/navbar/plane (2) 1.png" alt="Tour Travel Expert" class="dropdown-service-img">
+                            <a href="service3.html" class="dropdown-link">Cici Tour Travel Expert</a>
+                        </div>
+                        <div class="dropdown-service-item" id="serviceCareer" style="border-radius: 0 0 13px 0;">
+                            <img src="/asset/navbar/bag (1) 1.png" alt="Career Link Expert" class="dropdown-service-img">
+                            <a href="service4.html" class="dropdown-link">Cici Career Link Expert</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="contactUs.html" class="navbar-link fontInter">CONTACT US</a>
+            <button class="navbar-img-btn" id="joinBtn">
+                <img src="/asset/JOINUS.png" alt="Join Us Button" id="joinBtnImage" class="navbar-btn-img" onclick="window.open(`http://wa.me/+6287853909383`)">
+            </button>
+        </div>
+        <div class="navbar-hamburger" id="hamburger" onclick="toggleMenu()">
+            <span class="hamburger-icon" id="icon1"></span>
+            <span class="hamburger-icon" id="icon2"></span>
+            <span class="hamburger-icon" id="icon3"></span>
+        </div>
+        <div class="navbar-mobile-menu" id="navbarMobileMenu">
+            <a href="index.html" class="navbar-link fontInter">HOME</a>
+            <a href="about.html" class="navbar-link fontInter">ABOUT US</a>
+            <div class="navbar-dropdown">
+                <a href="#" class="navbar-link fontInter" id="mobileServicesDropdownBtn" onclick="toggleMobileServicesDropdown(event)">SERVICES</a>
+                <div class="dropdown-content" id="mobileServicesDropdownContent" style="display: none; flex-direction: column;">
+                    <a href="service1.html" class="navbar-link">Language Course Expert</a>
+                    <a href="service2.html" class="navbar-link">Study Abroad Expert</a>
+                    <a href="service3.html" class="navbar-link">Tour Travel Expert</a>
+                    <a href="service4.html" class="navbar-link">Career Link Expert</a>
+                </div>
+            </div>
+            <a href="contactUs.html" class="navbar-link fontInter">CONTACT US</a>
+        </div>
+    </nav>
+    <div class="article-container">
+        <div class="top-title">
+            <h1>CICIUNBOXCHINA #1</h1>
+            <h1 class="text-title">80 TAHUN KEMENANGAN PERANG DUNIA II: BEIJING TUNJUKKAN TARING MILITER</h1>
+        </div>
+        
+        <p class="author">Celia Vanessa Hakim</p>
+        <img src="/asset/CICI MANDARIN - COVER ARTIKEL 1 DALAM.png" alt="" class="dalam-img">
+
+        <hr>
+    
+        <p>“你好! We’re back with more China updates from Cici!”</p>
+    
+        <p>Pada tanggal 3 September 2025, China menggelar parade militer megah di Lapangan Tiananmen, Beijing, untuk memperingati 80 tahun berakhirnya Perang Dunia Kedua. Acara ini merupakan parade terbesar China dalam sejarah modernnya, dengan simbol-simbol seperti struktur berbentuk Tembok Besar dan angka besar “1945-2025” terpampang di tengah lapangan.
+        </p>
+    
+        <p>Presiden Xi Jinping memimpin upacara dan menjadi pembicara utama, menegaskan militer Tiongkok sebagai penjaga kedaulatan dan simbol kebangkitan bangsa. Dalam pidatonya, Presiden Xi Jinping mengatakan “The Chinese people are … not afraid of violence and are self-reliant and strong.” Di dalam parade militer ini, terlihat terdapat beberapa persenjataan yang dipamerkan, seperti misil balistik nuklir yang dapat menjangkau seluruh dunia, misil hipersonik pembunuh kapal yang tidak bisa dicegat, drone bawah laut raksasa yang bisa beroperasi sendiri, senjata laser pertahanan udara yang membutakan musuh, serta drone serang siluman yang menjadi pendamping dari jet tempur (Khomsurijal W, 2025)
+        </p>
+    
+        <img src="/asset/article1/1.png" alt="Jet">
+        <p>Melalui pidato dan pameran persenjataan tersebut, sejumlah akademisi berpendapat bahwa hal tersebut menjadi sinyal bagi negara-negara seperti Amerika Serikat, Eropa, dan negara-negara tetangga lainnya untuk berpikir dua kali jika mereka mempertimbangkan untuk menantang kepentingan nasional China (Helen Davidson, 2025).
+        </p>
+    
+        <p>Lebih dari 25 kepala negara dan pemerintahan hadir dalam parade ini, termasuk Presiden Rusia Vladimir Putin dan Pemimpin Korea Utara Kim Jong Un. Kehadiran tokoh-tokoh penting ini menunjukkan sebuah dimensi diplomatik di acara ini. Lebih dari 50,000 orang yang hadir untuk menyaksikan secara langsung parade militer tersebut  (Nectar Gan, 2025). 
+        </p>
+    
+        <p>Acara tersebut ditutup dengan sebuah gala musik yang megah berdurasi sekitar satu setengah jam yang berjudul “Justice will Prevail”. Kemudian, yang tidak kalah menariknya lagi adalah ketika Presiden Xi Jinping bertemu dengan para veteran Perang Dunia Kedua sebelum pertunjukkan tersebut. Hal ini menunjukkan rasa apresiatif yang tinggi President Xi Jinping terhadap pejuang kemerdekaan China (Nectar Gan, 2025).
+        </p>
+    
+    
+        <img src="asset/article1/2.png" alt="Xi Jinping">
+        <p><strong>Stay curious, stay kind, and see you in the next chapter of #CiciUnboxChina!</strong></p>
+    
+        <div class="references">
+            <h2>Referensi</h2>
+    
+            <p>Davidson, Helen. (2025). “Xi Jinping says world faces ‘peace or war’, as Putin and Kim join him for military parade.” The Guardian.   <br>
+            <a href="https://www.theguardian.com/world/2025/sep/03/china-military-parade-xi-jinping-appears-with-vladimir-putin-kim-jong-un.">https://www.theguardian.com/world/2025/sep/03/china-military-parade-xi-jinping-appears-with-vladimir-putin-kim-jong-un.</a></p>
+    
+            <p>Gan, Nectar. (2025). “China showcases military strength at parade as Xi stands alongside Putin and Kim.” CNN World. <br>
+            <a href="https://edition.cnn.com/world/live-news/china-military-parade-xi-jinping-09-03-25-intl-hnk.">https://edition.cnn.com/world/live-news/china-military-parade-xi-jinping-09-03-25-intl-hnk.</a></p>
+    
+            <p> W, Khomsurjial. (2025). “5 Senjata Berbahaya China yang Bikin AS dan Sekutunya Gemetar! Nomor 3 Bisa Menyelam Tanpa Awak dan Hancurkan Musuh.” Disway.id.   <br>
+            <a href="https://disway.id/read/896361/5-senjata-berbahaya-china-yang-bikin-as-dan-sekutunya-gemetar-nomor-3-bisa-menyelam-tanpa-awak-dan-hancurkan-musuh/15#.">https://disway.id/read/896361/5-senjata-berbahaya-china-yang-bikin-as-dan-sekutunya-gemetar-nomor-3-bisa-menyelam-tanpa-awak-dan-hancurkan-musuh/15#.</a></p>
+        </div>
+    </div>
+
+    <script defer src="./script.js"></script>
+</body>
+</html>
