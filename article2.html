@@ -1,140 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cici Mandarin</title>
-    <link rel="icon" type="image/png" href="/asset/LogoSecondary.png">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="article.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="asset/LogoSecondary.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="article.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/counterapi/dist/counter.browser.min.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="navbar">
-        <div class="navbar-left">
-            <img src="/asset/LogoSecondary.png" alt="Logo" class="navbar-logo">
-        </div>
-        <div class="navbar-right">
-            <a href="index.html" class="navbar-link fontInterActive">HOME</a>
-            <a href="about.html" class="navbar-link fontInter">ABOUT US</a>
-            <div class="navbar-dropdown">
-                <a class="navbar-link fontInter" id="servicesDropdownBtn">SERVICES</a>
-                <div class="dropdown-content" id="servicesDropdownContent" style="display: none; z-index: 100000;">
-                    <div class="dropdown-service-list" style="flex-direction: row; width: 100%; align-items:flex-start; justify-content: center; padding: 10px; z-index: 1000;">
-                        <div class="dropdown-service-item" id="serviceLang" style="border-radius: 0 0 0 13px;">
-                            <img src="/asset/navbar/languages 1.png" alt="Language Course Expert" class="dropdown-service-img">
-                            <a href="service1.html" class="dropdown-link">Cici Language Course Expert</a>
-                        </div>
-                        <div class="dropdown-service-item" id="serviceStudy">
-                            <img src="/asset/navbar/congratulation 1.png" alt="Study Abroad Expert" class="dropdown-service-img">
-                            <a href="service2.html" class="dropdown-link">Cici Study Abroad Expert</a>
-                        </div>
-                        <div class="dropdown-service-item" id="serviceTour">
-                            <img src="/asset/navbar/plane (2) 1.png" alt="Tour Travel Expert" class="dropdown-service-img">
-                            <a href="service3.html" class="dropdown-link">Cici Tour Travel Expert</a>
-                        </div>
-                        <div class="dropdown-service-item" id="serviceCareer" style="border-radius: 0 0 13px 0;">
-                            <img src="/asset/navbar/bag (1) 1.png" alt="Career Link Expert" class="dropdown-service-img">
-                            <a href="service4.html" class="dropdown-link">Cici Career Link Expert</a>
-                        </div>
-                    </div>
-                </div>
+      <div class="navbar-left">
+        <img src="asset/LogoSecondary.png" alt="Logo" class="navbar-logo" />
+      </div>
+      <div class="navbar-right">
+        <a href="index.html" class="navbar-link fontInterActive">HOME</a>
+        <a href="about.html" class="navbar-link fontInter">ABOUT US</a>
+        <div class="navbar-dropdown">
+          <a class="navbar-link fontInter" id="servicesDropdownBtn">SERVICES</a>
+          <div class="dropdown-content" id="servicesDropdownContent" style="display: none; z-index: 100000">
+            <div class="dropdown-service-list" style="flex-direction: row; width: 100%; align-items: flex-start; justify-content: center; padding: 10px; z-index: 1000">
+              <div class="dropdown-service-item" id="serviceLang" style="border-radius: 0 0 0 13px">
+                <img src="asset/navbar/languages 1.png" alt="Language Course Expert" class="dropdown-service-img" />
+                <a href="service1.html" class="dropdown-link">Cici Language Course Expert</a>
+              </div>
+              <div class="dropdown-service-item" id="serviceStudy">
+                <img src="asset/navbar/congratulation 1.png" alt="Study Abroad Expert" class="dropdown-service-img" />
+                <a href="service2.html" class="dropdown-link">Cici Study Abroad Expert</a>
+              </div>
+              <div class="dropdown-service-item" id="serviceTour">
+                <img src="asset/navbar/plane (2) 1.png" alt="Tour Travel Expert" class="dropdown-service-img" />
+                <a href="service3.html" class="dropdown-link">Cici Tour Travel Expert</a>
+              </div>
+              <div class="dropdown-service-item" id="serviceCareer" style="border-radius: 0 0 13px 0">
+                <img src="asset/navbar/bag (1) 1.png" alt="Career Link Expert" class="dropdown-service-img" />
+                <a href="service4.html" class="dropdown-link">Cici Career Link Expert</a>
+              </div>
             </div>
-            <a href="contactUs.html" class="navbar-link fontInter">CONTACT US</a>
-            <button class="navbar-img-btn" id="joinBtn">
-                <img src="/asset/JOINUS.png" alt="Join Us Button" id="joinBtnImage" class="navbar-btn-img" onclick="window.open(`http://wa.me/+6287853909383`)">
-            </button>
+          </div>
         </div>
-        <div class="navbar-hamburger" id="hamburger" onclick="toggleMenu()">
-            <span class="hamburger-icon" id="icon1"></span>
-            <span class="hamburger-icon" id="icon2"></span>
-            <span class="hamburger-icon" id="icon3"></span>
+        <a href="contactUs.html" class="navbar-link fontInter">CONTACT US</a>
+        <button class="navbar-img-btn" id="joinBtn">
+          <img src="asset/JOINUS.png" alt="Join Us Button" id="joinBtnImage" class="navbar-btn-img" onclick="window.open(`http://wa.me/+6287853909383`)" />
+        </button>
+      </div>
+      <div class="navbar-hamburger" id="hamburger" onclick="toggleMenu()">
+        <span class="hamburger-icon" id="icon1"></span>
+        <span class="hamburger-icon" id="icon2"></span>
+        <span class="hamburger-icon" id="icon3"></span>
+      </div>
+      <div class="navbar-mobile-menu" id="navbarMobileMenu">
+        <a href="index.html" class="navbar-link fontInter">HOME</a>
+        <a href="about.html" class="navbar-link fontInter">ABOUT US</a>
+        <div class="navbar-dropdown">
+          <a href="#" class="navbar-link fontInter" id="mobileServicesDropdownBtn" onclick="toggleMobileServicesDropdown(event)">SERVICES</a>
+          <div class="dropdown-content" id="mobileServicesDropdownContent" style="display: none; flex-direction: column">
+            <a href="service1.html" class="navbar-link">Language Course Expert</a>
+            <a href="service2.html" class="navbar-link">Study Abroad Expert</a>
+            <a href="service3.html" class="navbar-link">Tour Travel Expert</a>
+            <a href="service4.html" class="navbar-link">Career Link Expert</a>
+          </div>
         </div>
-        <div class="navbar-mobile-menu" id="navbarMobileMenu">
-            <a href="index.html" class="navbar-link fontInter">HOME</a>
-            <a href="about.html" class="navbar-link fontInter">ABOUT US</a>
-            <div class="navbar-dropdown">
-                <a href="#" class="navbar-link fontInter" id="mobileServicesDropdownBtn" onclick="toggleMobileServicesDropdown(event)">SERVICES</a>
-                <div class="dropdown-content" id="mobileServicesDropdownContent" style="display: none; flex-direction: column;">
-                    <a href="service1.html" class="navbar-link">Language Course Expert</a>
-                    <a href="service2.html" class="navbar-link">Study Abroad Expert</a>
-                    <a href="service3.html" class="navbar-link">Tour Travel Expert</a>
-                    <a href="service4.html" class="navbar-link">Career Link Expert</a>
-                </div>
-            </div>
-            <a href="contactUs.html" class="navbar-link fontInter">CONTACT US</a>
-        </div>
+        <a href="contactUs.html" class="navbar-link fontInter">CONTACT US</a>
+      </div>
     </nav>
-    
+
     <div class="article-container">
-        <div class="top-title">
-            <h1>CICIUNBOXCHINA #2</h1>
-            <h1 class="text-title">DI BALIK TEMBOK KAMPUS TIONGKOK: BEGINI SISTEMNYA!</h1>
-        </div>  
-        <p class="author">Celia Vanessa Hakim</p>
-        <img src="/asset/CICI MANDARIN - COVER ARTIKEL 2 DALAM.png" alt="" class="dalam-img">
-        <hr>
-        <p>“你好! We’re back with more China updates from Cici!”</p>
-    
-        <p>Dalam beberapa dekade terakhir, pendidikan tinggi Tiongkok telah mengalami perubahan yang luar biasa pesat, dari sistem yang terpusat dan tertutup, kini menjadi terbuka, kompetitif, dan bercita-cita global. Melalui kebijakan reformasi dan keterbukaan sejak tahun 1970-an, Tiongkok menjadikan pendidikan tinggi sebagai salah satu kunci utama untuk mencapai pembangunan nasional dan daya saing global.
+      <div class="top-title">
+        <h1>CICIUNBOXCHINA #2</h1>
+        <h1 class="text-title">DI BALIK TEMBOK KAMPUS TIONGKOK: BEGINI SISTEMNYA!</h1>
+      </div>
+      <p class="author">Celia Vanessa Hakim</p>
+      <img src="asset/CICI MANDARIN - COVER ARTIKEL 2 DALAM.png" alt="" class="dalam-img" />
+      <hr />
+      <p>“你好! We’re back with more China updates from Cici!”</p>
+
+      <p>
+        Dalam beberapa dekade terakhir, pendidikan tinggi Tiongkok telah mengalami perubahan yang luar biasa pesat, dari sistem yang terpusat dan tertutup, kini menjadi terbuka, kompetitif, dan bercita-cita global. Melalui kebijakan
+        reformasi dan keterbukaan sejak tahun 1970-an, Tiongkok menjadikan pendidikan tinggi sebagai salah satu kunci utama untuk mencapai pembangunan nasional dan daya saing global.
+      </p>
+
+      <h2>Sejarah Pendidikan Tinggi di Tiongkok</h2>
+      <p>
+        Konsep pendidikan tinggi di Tiongkok diperkenalkan pada saat masa Dinasti Tang, melalui lembaga shuyan, yaitu akademi pembelajaran klasik Tiongkok. Kemudian, konsep pendidikan tinggi modern di Tiongkok mulai berkembang pada akhir
+        abad ke-19, yang ditandai dengan adanya Beiyang Gong Xue (cikal bakal Tianjin University) yang didirikan pada tahun 1895. Kemudian, terdapat juga Nanyang Gong Xue (cikal bakal Shanghai Jiaotong University) yang didirikan pada tahun
+        1896 dan Imperial University of Peking (yang sekarang disebut sebagai Peking University) yang didirikan pada tahun 1898 (Yuzhuo Cai & Fengqiao Yan, 2017).
+      </p>
+
+      <p>
+        Pada tahun 1949, ketika Republik Rakyat Tiongkok baru berdiri, pemerintahan Mao Zedong mencoba untuk membangun industrialisasi yang berideologi sosialis, yaitu paham yang menganjurkan kepemilikan sosial dan kontrol demokratis atas
+        alat produksi untuk mengurangi ketidaksetaraan. Hal ini dilakukan dengan cara melakukan transisi dari negara agrikultur menjadi negara industri yang difasilitasi dengan sebuah sistem pendidikan (Mengyun Ma, 2022). Pemerintahan
+        Tiongkok mengambil inspirasi dari Uni Soviet dalam membentuk sistem pendidikannya. Dalam hal ini, sistem pendidikan Tiongkok yang menekankan kontrol negara secara penuh terhadap pendidikan tinggi, termasuk dalam pengelolaan
+        institusi, pengangkatan pimpinan, hingga penempatan lulusan kerja. Namun, pada masa pemerintahan Deng Xiao Ping pada akhir tahun 1970-an, Tiongkok mulai mereformasi sektor pendidikan tingginya secara signifikan. Reformasi ini
+        mencakup desentralisasi wewenang dari pemerintah pusat ke daerah, pemberian otonomi luas kepada university, serta pembukaan ruang bagi pendirian institusi swasta (Yuzhuo Cai & Fengqiao Yan, 2017).
+      </p>
+
+      <h2>Struktur Sistem Pendidikan Tinggi di Tiongkok</h2>
+      <p>
+        Struktur sistem pendidikan tinggi di Tiongkok disusun secara jelas dan sistematis. Pada tingkat paling atas, terdapat universitas riset unggulan yang tergabung dalam “Project 985”, yaitu inisiatif dari Presiden Jiang Zemin pada
+        tahun 1998 untuk menciptakan universitas kelas dunia. Di bawahnya, terdapat institusi dalam kelompok “Project 211” yang dibuat pada tahun 1995 untuk memperkuat sekitar 100 universitas dan program studi unggulan. Tingkat ketiga
+        mencakup universitas regional yang fokus pada pengajaran, serta tingkat paling bawah adalah perguruan tinggi vokasional dan politeknik. Untuk mencapai pendidikan yang berstandar global, pemerintah Tiongkok mengalokasikan dana yang
+        sangat besar untuk Project 985 dan Project 211 (Yuzhuo Cai & Fengqiao Yan, 2017).
+      </p>
+
+      <p>
+        Dalam Project 985, terdapat 39 universitas, yang beberapa diantaranya adalah Tsinghua University, Peking University, Zhejiang University, Fudan University, Nanjing University, dan lainnya. Sementara itu, terdapat 112 universitas
+        yang termasuk dalam Project 211, yang diantaranya adalah Xinjiang University, Shaanxi Normal University, Guizhou University, serta 5 universitas yang sudah disebutkan dalam Project 985. Pemerintah Tiongkok mengalokasikan dana
+        sebesar 7,97 miliar USD untuk Project 985 dan 2,7 miliar USD untuk Project 211 (Yannan Cao & Rui Yang, 2023).
+      </p>
+
+      <h2>China’s National Plan for Medium and Long-term Education Reform and Development (2010-2020)</h2>
+      <p>
+        Untuk meningkatkan kualitas pendidikan tinggi, pemerintah Tiongkok meluncurkan China’s National Plan for Medium and Long-term Education Reform and Development (2010-2020). Kebijakan ini menganut konsep Lifelong Learning atau
+        pembelajaran seumur hidup, yang artinya semua orang harus diajari apa yang ingin mereka pelajari unggul dalam apa yang mereka pelajari, dan menerapkan apa yang telah mereka pelajari (UNESCO, 2023). Rencana ini menekankan pada
+        peningkatan kualitas, pemerataan akses, dan inovasi dalam pendidikan. Salah satu aspek terpenting dalam rencana ini adalah proses internasionalisasi yang diupayakan melalui kolaborasi-kolaborasi internasional yang dilakukan oleh
+        universitas lokal di Tiongkok, baik dalam bentuk double degree, pertukaran dosen, hingga riset kolaboratif. Pemerintah Tiongkok juga melakukan pengembangan kurikulum internasional dan penggunaan bahasa Inggris sebagai bahasa
+        pengantar dalam pengajaran di berbagai program studi. Bahkan, dalam rencana ini, dinyatakan bahwa institusi pendidikan Tiongkok didorong untuk membuka cabang di luar negeri. Hal ini dilakukan untuk mendukung pengajaran bahasa
+        Mandarin sebagai bahasa asing di negara lain. Maka, tidak mengherankan bahwa saat ini terdapat beberapa universitas Tiongkok yang membuka cabang di negara lain, salah satunya adalah Xiamen University di Malaysia.
+      </p>
+
+      <h2>2011 Project</h2>
+      <p>
+        Pada tahun 2011, ketika Tsinghua University merayakan hari ulang tahunnya ke-100, Presiden Hu Jintao memberikan pernyataan mengenai keberhasilan kegiatan inovasi universitas. Perayaan tersebut juga diikuti oleh peluncuran 2011
+        Project oleh Menteri Pendidikan Tiongkok yang bertujuan untuk mencapai inovasi dalam penelitian dan pengembangan dengan mensinergikan upaya kolaboratif antara universitas, lembaga penelitian, industri dan pemerintah. Kebijakan
+        tersebut mengubah struktur pendanaan dari investasi berbasis institusi menjadi investasi berbasis program (Yuzhuo Cai & Fengqiao Yan, 2017). Hal ini pun didukung dengan adanya the 12th Five-Year Plan (2011-2015) yang diajukan oleh
+        Kongres Rakyat Nasional ke-11 pada tahun 2011 yang menetapkan tujuan pembangunan Tiongkok untuk mempercepat reformasi pendidikan. Dalam rencana tersebut, salah satu pilar yang penting adalah memperkuat kerjasama internasional untuk
+        meningkatkan riset dan inovasi (Feng Zhuolin, Wang Qi, Liu Niancai. ed., 2025).
+      </p>
+
+      <h2>Internasionalisasi Pendidikan Menjadi Peluang Untuk Studi di Tiongkok</h2>
+
+      <p>
+        Dengan adanya prinsip internasionalisasi yang selalu ditekankan oleh pemerintah Tiongkok, maka tidaklah mengherankan bahwa saat ini terdapat sekitar 35 juta mahasiswa asing yang menempuh studi sarjana dan 3,3 juta mahasiswa asing di
+        tingkat pascasarjana di Tiongkok. Mahasiswa asing di Tiongkok juga berasal dari berbagai macam benua, termasuk Asia, Eropa, Amerika, dan bahkan Afrika. Melalui inisiatif yang sangat besar dari pemerintah Tiongkok terhadap pendidikan
+        tinggi, tidak dapat dipungkiri bahwa peluang bagi mahasiswa asing untuk mengejar pendidikannya di negara tirai bambu semakin terbuka lebar (Timothy van Gardingen, 2024).
+      </p>
+
+      <p><strong>Stay curious, stay kind, and see you in the next chapter of #CiciUnboxChina!</strong></p>
+
+      <div class="references">
+        <h2>Referensi</h2>
+        <p>Cai, Yuzhuo & Fengqiao Yan. (2017). Chinese Higher Education and University. <i> Handbook of Chinese Education.</i> <br /></p>
+        <p>
+          Cao, Yannan & Rui Yang. (2023). A new HE development model is needed to sustain excellence. University World News.<a href=" https://www.universityworldnews.com/post.php?story=20230726111102317. ">
+            https://www.universityworldnews.com/post.php?story=20230726111102317.
+          </a>
         </p>
-    
-        <h2>Sejarah Pendidikan Tinggi di Tiongkok</h2>
-        <p>Konsep pendidikan tinggi di Tiongkok diperkenalkan pada saat masa Dinasti Tang, melalui lembaga shuyan, yaitu akademi pembelajaran klasik Tiongkok. Kemudian, konsep pendidikan tinggi modern di Tiongkok mulai berkembang pada akhir abad ke-19, yang ditandai dengan adanya Beiyang Gong Xue (cikal bakal Tianjin University) yang didirikan pada tahun 1895. Kemudian, terdapat juga Nanyang Gong Xue (cikal bakal Shanghai Jiaotong University) yang didirikan pada tahun 1896 dan Imperial University of Peking (yang sekarang disebut sebagai Peking University) yang didirikan pada tahun 1898  (Yuzhuo Cai & Fengqiao Yan, 2017).
+
+        <p>
+          Gardingen, Timothy van. (2024). How Many International Students Study in China. The Pie News.
+          <a href="https://thepienews.com/how-many-international-students-study-in-china/">https://thepienews.com/how-many-international-students-study-in-china/</a>
         </p>
-    
-        <p>Pada tahun 1949, ketika Republik Rakyat Tiongkok baru berdiri, pemerintahan Mao Zedong mencoba untuk membangun industrialisasi yang berideologi sosialis, yaitu paham yang menganjurkan kepemilikan sosial dan kontrol demokratis atas alat produksi untuk mengurangi ketidaksetaraan. Hal ini dilakukan dengan cara melakukan transisi dari negara agrikultur menjadi negara industri yang difasilitasi dengan sebuah sistem pendidikan (Mengyun Ma, 2022). Pemerintahan Tiongkok mengambil inspirasi dari Uni Soviet dalam membentuk sistem pendidikannya. Dalam hal ini, sistem pendidikan Tiongkok yang menekankan kontrol negara secara penuh terhadap pendidikan tinggi, termasuk dalam pengelolaan institusi, pengangkatan pimpinan, hingga penempatan lulusan kerja. Namun, pada masa pemerintahan Deng Xiao Ping pada akhir tahun 1970-an, Tiongkok mulai mereformasi sektor pendidikan tingginya secara signifikan. Reformasi ini mencakup desentralisasi wewenang dari pemerintah pusat ke daerah, pemberian otonomi luas kepada university, serta pembukaan ruang bagi pendirian institusi swasta  (Yuzhuo Cai & Fengqiao Yan, 2017).
-    
+
+        <p>Ma, Mengyun (2022). Workforce Equality: The Constitutional Conception of Educational Equality in Mao-Era China.<i>Penn Carey Law: Legal Scholarship Repository.</i> <br /></p>
+
+        <p>
+          UNESCO. (2023). China National Plan Medium and Long Term Education Reform and Development 2020, Issued 2010. UNESCO.
+          <a href="https://www.uil.unesco.org/en/articles/china-national-plan-medium-and-long-term-education-reform-and-development-2020-issued-2010"
+            >https://www.uil.unesco.org/en/articles/china-national-plan-medium-and-long-term-education-reform-and-development-2020-issued-2010</a
+          >
         </p>
-    
-        <h2>Struktur Sistem Pendidikan Tinggi di Tiongkok
-    
-        </h2>
-        <p>Struktur sistem pendidikan tinggi di Tiongkok disusun secara jelas dan sistematis. Pada tingkat paling atas, terdapat universitas riset unggulan yang tergabung dalam “Project 985”, yaitu inisiatif dari Presiden Jiang Zemin pada tahun 1998 untuk menciptakan universitas kelas dunia. Di bawahnya, terdapat institusi dalam kelompok “Project 211” yang dibuat pada tahun 1995 untuk memperkuat sekitar 100 universitas dan program studi unggulan. Tingkat ketiga mencakup universitas regional yang fokus pada pengajaran, serta tingkat paling bawah adalah perguruan tinggi vokasional dan politeknik. Untuk mencapai pendidikan yang berstandar global, pemerintah Tiongkok mengalokasikan dana yang sangat besar untuk Project 985 dan Project 211 (Yuzhuo Cai & Fengqiao Yan, 2017).
-        </p>
-    
-        <p>Dalam Project 985, terdapat 39 universitas, yang beberapa diantaranya adalah Tsinghua University, Peking University, Zhejiang University, Fudan University, Nanjing University, dan lainnya. Sementara itu, terdapat 112 universitas yang termasuk dalam Project 211, yang diantaranya adalah Xinjiang University, Shaanxi Normal University, Guizhou University, serta 5 universitas yang sudah disebutkan dalam Project 985. Pemerintah Tiongkok mengalokasikan dana sebesar 7,97 miliar USD untuk Project 985 dan 2,7 miliar USD untuk Project 211 (Yannan Cao & Rui Yang, 2023).
-        </p>
-    
-        <h2>China’s National Plan for Medium and Long-term Education Reform and Development (2010-2020)
-        </h2>
-        <p>Untuk meningkatkan kualitas pendidikan tinggi, pemerintah Tiongkok meluncurkan China’s National Plan for Medium and Long-term Education Reform and Development (2010-2020). Kebijakan ini menganut konsep Lifelong Learning atau pembelajaran seumur hidup, yang artinya semua orang harus diajari apa yang ingin mereka pelajari unggul dalam apa yang mereka pelajari, dan menerapkan apa yang telah mereka pelajari (UNESCO, 2023). Rencana ini menekankan pada peningkatan kualitas, pemerataan akses, dan inovasi dalam pendidikan. Salah satu aspek terpenting dalam rencana ini adalah proses internasionalisasi yang diupayakan melalui kolaborasi-kolaborasi internasional yang dilakukan oleh universitas lokal di Tiongkok, baik dalam bentuk double degree, pertukaran dosen, hingga riset kolaboratif. Pemerintah Tiongkok juga melakukan pengembangan kurikulum internasional dan penggunaan bahasa Inggris sebagai bahasa pengantar dalam pengajaran di berbagai program studi. Bahkan, dalam rencana ini, dinyatakan bahwa institusi pendidikan Tiongkok didorong untuk membuka cabang di luar negeri. Hal ini dilakukan untuk mendukung pengajaran bahasa Mandarin sebagai bahasa asing di negara lain. Maka, tidak mengherankan bahwa saat ini terdapat beberapa universitas Tiongkok yang membuka cabang di negara lain, salah satunya adalah Xiamen University di Malaysia. 
-    
-        </p>
-    
-        <h2>2011 Project
-        </h2>
-        <p>Pada tahun 2011, ketika Tsinghua University merayakan hari ulang tahunnya ke-100, Presiden Hu Jintao memberikan pernyataan mengenai keberhasilan kegiatan inovasi universitas. Perayaan tersebut juga diikuti oleh peluncuran 2011 Project oleh Menteri Pendidikan Tiongkok yang bertujuan untuk mencapai inovasi dalam penelitian dan pengembangan dengan mensinergikan upaya kolaboratif antara universitas, lembaga penelitian, industri dan pemerintah. Kebijakan tersebut mengubah struktur pendanaan dari investasi berbasis institusi menjadi investasi berbasis program (Yuzhuo Cai & Fengqiao Yan, 2017). Hal ini pun didukung dengan adanya the 12th Five-Year Plan (2011-2015) yang diajukan oleh Kongres Rakyat Nasional ke-11 pada tahun 2011 yang menetapkan tujuan pembangunan Tiongkok untuk mempercepat reformasi pendidikan. Dalam rencana tersebut, salah satu pilar yang penting adalah memperkuat kerjasama internasional untuk meningkatkan riset dan inovasi (Feng Zhuolin, Wang Qi, Liu Niancai. ed., 2025).
-        </p>
-    
-        <h2>Internasionalisasi Pendidikan Menjadi Peluang Untuk Studi di Tiongkok</h2>
-    
-        <p>Dengan adanya prinsip internasionalisasi yang selalu ditekankan oleh pemerintah Tiongkok, maka tidaklah mengherankan bahwa saat ini terdapat sekitar 35 juta mahasiswa asing yang menempuh studi sarjana dan 3,3 juta mahasiswa asing di tingkat pascasarjana di Tiongkok. Mahasiswa asing di Tiongkok juga berasal dari berbagai macam benua, termasuk Asia, Eropa, Amerika, dan bahkan Afrika. Melalui inisiatif yang sangat besar dari pemerintah Tiongkok terhadap pendidikan tinggi, tidak dapat dipungkiri bahwa peluang bagi mahasiswa asing untuk mengejar pendidikannya di negara tirai bambu semakin terbuka lebar (Timothy van Gardingen, 2024).
-        </p>
-        
-        <p><strong>Stay curious, stay kind, and see you in the next chapter of #CiciUnboxChina!</strong></p>
-    
-        <div class="references">
-            <h2>Referensi</h2>
-            <p> Cai, Yuzhuo & Fengqiao Yan. (2017). Chinese Higher Education and University. <i>
-                Handbook of Chinese Education.</i> <br></p>
-            <p>Cao, Yannan & Rui Yang. (2023). A new HE development model is needed to sustain excellence. University World News.<a href=" https://www.universityworldnews.com/post.php?story=20230726111102317. "> https://www.universityworldnews.com/post.php?story=20230726111102317.  </a></p>
-    
-            <p> Gardingen, Timothy van. (2024). How Many International Students Study in China. The Pie News. <a href="https://thepienews.com/how-many-international-students-study-in-china/">https://thepienews.com/how-many-international-students-study-in-china/</a> </p>
-        
-            <p> Ma, Mengyun (2022). Workforce Equality: The Constitutional Conception of Educational Equality in Mao-Era China.<i>Penn Carey Law: Legal Scholarship Repository.</i> <br></p>
-        
-            <p> UNESCO. (2023). China National Plan Medium and Long Term Education Reform and Development 2020, Issued 2010. UNESCO.  <a href="https://www.uil.unesco.org/en/articles/china-national-plan-medium-and-long-term-education-reform-and-development-2020-issued-2010">https://www.uil.unesco.org/en/articles/china-national-plan-medium-and-long-term-education-reform-and-development-2020-issued-2010</a> </p>
-        
-            <p>  Zhuolin, Feng, Wang Qi & Liu Niancai. ed. (2025). <i>Education in China and the World: National Development and Global Benchmarking.</i>Shanghai Jiaotong University. <br></p>
-    
-        </div>
+
+        <p>Zhuolin, Feng, Wang Qi & Liu Niancai. ed. (2025). <i>Education in China and the World: National Development and Global Benchmarking.</i>Shanghai Jiaotong University. <br /></p>
+      </div>
     </div>
 
     <script defer src="./script.js"></script>
-</body>
+  </body>
 </html>

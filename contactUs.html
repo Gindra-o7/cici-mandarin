@@ -1,158 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cici Mandarin</title>
-    <link rel="icon" type="image/png" href="/asset/LogoSecondary.png">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-</head>
-<body class="bodyHome">
+    <link rel="icon" type="image/png" href="asset/LogoSecondary.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+  </head>
+  <body class="bodyHome">
     <nav class="navbar">
-        <div class="navbar-left">
-            <img src="/asset/LogoSecondary.png" alt="Logo" class="navbar-logo">
-        </div>
-        <div class="navbar-right">
-            <a href="index.html" class="navbar-link fontInter">HOME</a>
-            <a href="about.html" class="navbar-link fontInter">ABOUT US</a>
-            <div class="navbar-dropdown">
-                <a class="navbar-link fontInter" id="servicesDropdownBtn">SERVICES</a>
-                <div class="dropdown-content" id="servicesDropdownContent" style="display: none; z-index: 100000;">
-                    <div class="dropdown-service-list" style="flex-direction: row; width: 100%; align-items:flex-start; justify-content: center; padding: 10px; z-index: 1000;">
-                        <div class="dropdown-service-item" id="serviceLang" style="border-radius: 0 0 0 13px;">
-                            <img src="/asset/navbar/languages 1.png" alt="Language Course Expert" class="dropdown-service-img">
-                            <a href="service1.html" class="dropdown-link">Cici Language Course Expert</a>
-                        </div>
-                        <div class="dropdown-service-item" id="serviceStudy">
-                            <img src="/asset/navbar/congratulation 1.png" alt="Study Abroad Expert" class="dropdown-service-img">
-                            <a href="service2.html" class="dropdown-link">Cici Study Abroad Expert</a>
-                        </div>
-                        <div class="dropdown-service-item" id="serviceTour">
-                            <img src="/asset/navbar/plane (2) 1.png" alt="Tour Travel Expert" class="dropdown-service-img">
-                            <a href="service3.html" class="dropdown-link">Cici Tour Travel Expert</a>
-                        </div>
-                        <div class="dropdown-service-item" id="serviceCareer" style="border-radius: 0 0 13px 0;">
-                            <img src="/asset/navbar/bag (1) 1.png" alt="Career Link Expert" class="dropdown-service-img">
-                            <a href="service4.html" class="dropdown-link">Cici Career Link Expert</a>
-                        </div>
-                    </div>
-                </div>
+      <div class="navbar-left">
+        <img src="asset/LogoSecondary.png" alt="Logo" class="navbar-logo" />
+      </div>
+      <div class="navbar-right">
+        <a href="index.html" class="navbar-link fontInter">HOME</a>
+        <a href="about.html" class="navbar-link fontInter">ABOUT US</a>
+        <div class="navbar-dropdown">
+          <a class="navbar-link fontInter" id="servicesDropdownBtn">SERVICES</a>
+          <div class="dropdown-content" id="servicesDropdownContent" style="display: none; z-index: 100000">
+            <div class="dropdown-service-list" style="flex-direction: row; width: 100%; align-items: flex-start; justify-content: center; padding: 10px; z-index: 1000">
+              <div class="dropdown-service-item" id="serviceLang" style="border-radius: 0 0 0 13px">
+                <img src="asset/navbar/languages 1.png" alt="Language Course Expert" class="dropdown-service-img" />
+                <a href="service1.html" class="dropdown-link">Cici Language Course Expert</a>
+              </div>
+              <div class="dropdown-service-item" id="serviceStudy">
+                <img src="asset/navbar/congratulation 1.png" alt="Study Abroad Expert" class="dropdown-service-img" />
+                <a href="service2.html" class="dropdown-link">Cici Study Abroad Expert</a>
+              </div>
+              <div class="dropdown-service-item" id="serviceTour">
+                <img src="asset/navbar/plane (2) 1.png" alt="Tour Travel Expert" class="dropdown-service-img" />
+                <a href="service3.html" class="dropdown-link">Cici Tour Travel Expert</a>
+              </div>
+              <div class="dropdown-service-item" id="serviceCareer" style="border-radius: 0 0 13px 0">
+                <img src="asset/navbar/bag (1) 1.png" alt="Career Link Expert" class="dropdown-service-img" />
+                <a href="service4.html" class="dropdown-link">Cici Career Link Expert</a>
+              </div>
             </div>
-            <a href="contactUs.html" class="navbar-link fontInterActive">CONTACT US</a>
-            <button class="navbar-img-btn" id="joinBtn">
-                <img src="/asset/JOINUS.png" alt="Join Us Button" id="joinBtnImage" class="navbar-btn-img" onclick="window.open(`http://wa.me/+6287853909383`)">
-            </button>
+          </div>
         </div>
-        <div class="navbar-hamburger" id="hamburger" onclick="toggleMenu()">
-            <span class="hamburger-icon" id="icon1"></span>
-            <span class="hamburger-icon" id="icon2"></span>
-            <span class="hamburger-icon" id="icon3"></span>
+        <a href="contactUs.html" class="navbar-link fontInterActive">CONTACT US</a>
+        <button class="navbar-img-btn" id="joinBtn">
+          <img src="asset/JOINUS.png" alt="Join Us Button" id="joinBtnImage" class="navbar-btn-img" onclick="window.open(`http://wa.me/+6287853909383`)" />
+        </button>
+      </div>
+      <div class="navbar-hamburger" id="hamburger" onclick="toggleMenu()">
+        <span class="hamburger-icon" id="icon1"></span>
+        <span class="hamburger-icon" id="icon2"></span>
+        <span class="hamburger-icon" id="icon3"></span>
+      </div>
+      <div class="navbar-mobile-menu" id="navbarMobileMenu">
+        <a href="index.html" class="navbar-link fontInter">HOME</a>
+        <a href="about.html" class="navbar-link fontInter">ABOUT US</a>
+        <div class="navbar-dropdown">
+          <a href="#" class="navbar-link fontInter" id="mobileServicesDropdownBtn" onclick="toggleMobileServicesDropdown(event)">SERVICES</a>
+          <div class="dropdown-content" id="mobileServicesDropdownContent" style="display: none; flex-direction: column">
+            <a href="service1.html" class="navbar-link">Language Course Expert</a>
+            <a href="service2.html" class="navbar-link">Study Abroad Expert</a>
+            <a href="service3.html" class="navbar-link">Tour Travel Expert</a>
+            <a href="service4.html" class="navbar-link">Career Link Expert</a>
+          </div>
         </div>
-        <div class="navbar-mobile-menu" id="navbarMobileMenu">
-            <a href="index.html" class="navbar-link fontInter">HOME</a>
-            <a href="about.html" class="navbar-link fontInter">ABOUT US</a>
-            <div class="navbar-dropdown">
-                <a href="#" class="navbar-link fontInter" id="mobileServicesDropdownBtn" onclick="toggleMobileServicesDropdown(event)">SERVICES</a>
-                <div class="dropdown-content" id="mobileServicesDropdownContent" style="display: none; flex-direction: column;">
-                    <a href="service1.html" class="navbar-link">Language Course Expert</a>
-                    <a href="service2.html" class="navbar-link">Study Abroad Expert</a>
-                    <a href="service3.html" class="navbar-link">Tour Travel Expert</a>
-                    <a href="service4.html" class="navbar-link">Career Link Expert</a>
-                </div>
-            </div>
-            <a href="contactUs.html" class="navbar-link fontInter">CONTACT US</a>
-        </div>
+        <a href="contactUs.html" class="navbar-link fontInter">CONTACT US</a>
+      </div>
     </nav>
     <div class="contactUs">
-        <div class="socialContainer">
-            <h1 class="contact-us-header">CONTACT US</h1>
-            <div class="social-button" style="cursor: pointer;" onclick="window.open(`http://wa.me/+6287853909383`)">
-                <img src="/asset/socialVector/Vector-1.png" alt="WhatsApp Icon" class="whatsapp-icon" >
-                <span class="social-number">+62 878-5390-9383</span>
-            </div>
-            <div class="social-button" style="cursor: pointer;" onclick="window.open(`https://mail.google.com/mail/u/0/#inbox?compose=CllgCJTKXCZMqzXWPcmdScFNqGlPsVxvGNFVmlVLBgglDJWgChHFkrlvMMvFNbpJNXKvjcxtVLV`)">
-                <img src="/asset/socialVector/Vector-4.png" alt="WhatsApp Icon" class="whatsapp-icon" >
-                <span class="social-number">cicimandarin.idn@gmail.com</span>
-            </div>
-            <div class="social-button" style="cursor: pointer;" onclick="window.open(`https://www.instagram.com/cicimandarin.idn?igsh=aDg5eWU2a25wNzJt`)">
-                <img src="/asset/socialVector/Vector.png" alt="WhatsApp Icon" class="whatsapp-icon">
-                <span class="social-number">@cicimandarin.idn</span>
-            </div>
-            <div class="social-button" style="cursor: pointer;" onclick="window.open(`https://www.tiktok.com/@cicimandarin.idn?_t=ZS-8yZHonMJwAC&_r=1`)">
-                <img src="/asset/socialVector/Vector-2.png" alt="WhatsApp Icon" class="whatsapp-icon">
-                <span class="social-number">@cicimandarin.idn </span>
-            </div>
-            <div class="social-button" style="cursor: pointer;" onclick="window.open(`https://www.linkedin.com/company/cici-mandarin-idn/`)">
-                <img src="/asset/socialVector/Vector-3.png" alt="WhatsApp Icon" class="whatsapp-icon">
-                <span class="social-number">Cici Mandarin</span>
-            </div>
+      <div class="socialContainer">
+        <h1 class="contact-us-header">CONTACT US</h1>
+        <div class="social-button" style="cursor: pointer" onclick="window.open(`http://wa.me/+6287853909383`)">
+          <img src="asset/socialVector/Vector-1.png" alt="WhatsApp Icon" class="whatsapp-icon" />
+          <span class="social-number">+62 878-5390-9383</span>
         </div>
-        <div class="imageSocialContainer">
-            <img src="/asset/bg-02 1.png" alt="Contact Us Main Image" class="contactUs-main-image">
+        <div class="social-button" style="cursor: pointer" onclick="window.open(`https://mail.google.com/mail/u/0/#inbox?compose=CllgCJTKXCZMqzXWPcmdScFNqGlPsVxvGNFVmlVLBgglDJWgChHFkrlvMMvFNbpJNXKvjcxtVLV`)">
+          <img src="asset/socialVector/Vector-4.png" alt="WhatsApp Icon" class="whatsapp-icon" />
+          <span class="social-number">cicimandarin.idn@gmail.com</span>
         </div>
+        <div class="social-button" style="cursor: pointer" onclick="window.open(`https://www.instagram.com/cicimandarin.idn?igsh=aDg5eWU2a25wNzJt`)">
+          <img src="asset/socialVector/Vector.png" alt="WhatsApp Icon" class="whatsapp-icon" />
+          <span class="social-number">@cicimandarin.idn</span>
+        </div>
+        <div class="social-button" style="cursor: pointer" onclick="window.open(`https://www.tiktok.com/@cicimandarin.idn?_t=ZS-8yZHonMJwAC&_r=1`)">
+          <img src="asset/socialVector/Vector-2.png" alt="WhatsApp Icon" class="whatsapp-icon" />
+          <span class="social-number">@cicimandarin.idn </span>
+        </div>
+        <div class="social-button" style="cursor: pointer" onclick="window.open(`https://www.linkedin.com/company/cici-mandarin-idn/`)">
+          <img src="asset/socialVector/Vector-3.png" alt="WhatsApp Icon" class="whatsapp-icon" />
+          <span class="social-number">Cici Mandarin</span>
+        </div>
+      </div>
+      <div class="imageSocialContainer">
+        <img src="asset/bg-02 1.png" alt="Contact Us Main Image" class="contactUs-main-image" />
+      </div>
     </div>
-    <div class="FaQ" >
-        <div class="FaQTitle">
-            <h1>FREQUENTLY ASKED QUESTIONS</h1>
-        </div>
-        <div class="FaQOption">
-            <img src="/asset/faqOption/OPTIONS.png" class="faq-icon" loading="lazy">
-            <img class="faq-icon" loading="lazy">
-            <img class="faq-icon" loading="lazy">
-            <img class="faq-icon" loading="lazy">
-        </div>
-        <div class="FaQBubble">
-            <img src="/asset/faq/BUBBLE1.png" alt="FAQ Bubble" class="faq-bubble-image" loading="lazy">
-        </div>
+    <div class="FaQ">
+      <div class="FaQTitle">
+        <h1>FREQUENTLY ASKED QUESTIONS</h1>
+      </div>
+      <div class="FaQOption">
+        <img src="asset/faqOption/OPTIONS.png" class="faq-icon" loading="lazy" />
+        <img class="faq-icon" loading="lazy" />
+        <img class="faq-icon" loading="lazy" />
+        <img class="faq-icon" loading="lazy" />
+      </div>
+      <div class="FaQBubble">
+        <img src="asset/faq/BUBBLE1.png" alt="FAQ Bubble" class="faq-bubble-image" loading="lazy" />
+      </div>
     </div>
     <div class="testimonyBg">
-        <div class="carouselFaQ">
-            <div class="carouselFaQ-images">
-                <!-- Add your carousel items here -->
-                <div class="carousel-item">
-                    <img src="/asset/testimonials/5.png" alt="Image 1">
-                </div>
-                <div class="carousel-item">
-                    <img src="/asset/testimonials/7.png" alt="Image 3">
-                </div>
-                <div class="carousel-item">
-                    <img src="/asset/testimonials/6.png" alt="Image 2">
-                </div>
-                <div class="carousel-item">
-                    <img src="/asset/testimonials/1.png" alt="Image 1">
-                </div>
-                <div class="carousel-item">
-                    <img src="/asset/testimonials/3.png" alt="Image 3">
-                </div>
-                <div class="carousel-item">
-                    <img src="/asset/testimonials/2.png" alt="Image 2">
-                </div>
-            </div>
-            <button class="prevFaQ" onclick="moveSlide(-1)">&#10094;</button>
-            <button class="nextFaQ" onclick="moveSlide(1)">&#10095;</button>
+      <div class="carouselFaQ">
+        <div class="carouselFaQ-images">
+          <!-- Add your carousel items here -->
+          <div class="carousel-item">
+            <img src="asset/testimonials/5.png" alt="Image 1" />
+          </div>
+          <div class="carousel-item">
+            <img src="asset/testimonials/7.png" alt="Image 3" />
+          </div>
+          <div class="carousel-item">
+            <img src="asset/testimonials/6.png" alt="Image 2" />
+          </div>
+          <div class="carousel-item">
+            <img src="asset/testimonials/1.png" alt="Image 1" />
+          </div>
+          <div class="carousel-item">
+            <img src="asset/testimonials/3.png" alt="Image 3" />
+          </div>
+          <div class="carousel-item">
+            <img src="asset/testimonials/2.png" alt="Image 2" />
+          </div>
         </div>
+        <button class="prevFaQ" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="nextFaQ" onclick="moveSlide(1)">&#10095;</button>
+      </div>
     </div>
 
     <footer class="footer-container">
-        <div class="social-logo">
-                <img src="/asset/socialVector/Vector-5.png" alt="Home" onclick="window.open(`index.html`)">
-                <img src="/asset/socialVector/Vector.png" alt="WhatsApp" style="cursor: pointer;" onclick="window.open(`https://www.instagram.com/cicimandarin.idn?igsh=aDg5eWU2a25wNzJt`)">
-                <img src="/asset/socialVector/Vector-1.png" alt="Twitter" style="cursor: pointer;" onclick="window.open(`http://wa.me/+6287853909383`)">
-                <img src="/asset/socialVector/Vector-2.png" alt="YouTube" style="cursor: pointer;" onclick="window.open(`https://www.tiktok.com/@cicimandarin.idn?_t=ZS-8yZHonMJwAC&_r=1`)">
-                <img src="/asset/socialVector/Vector-3.png" alt="LinkedIn" style="cursor: pointer;" onclick="window.open(`https://www.linkedin.com/company/cici-mandarin-idn/`)">
-                <img src="/asset/socialVector/Vector-4.png" alt="WhatsApp" style="cursor: pointer;" onclick="window.open(`https://mail.google.com/mail/u/0/#inbox?compose=CllgCJTKXCZMqzXWPcmdScFNqGlPsVxvGNFVmlVLBgglDJWgChHFkrlvMMvFNbpJNXKvjcxtVLV`)">
-        </div>
-        <div class="footer-navigation">
-            <a href="index.html" class="footer-link">HOME</a>
-            <a href="about.html" class="footer-link">ABOUT US</a>
-            <a href="service1.html" class="footer-link">SERVICES</a>
-            <a href="contactUs.html" class="footer-link">CONTACT US</a>
-        </div>
+      <div class="social-logo">
+        <img src="asset/socialVector/Vector-5.png" alt="Home" onclick="window.open(`index.html`)" />
+        <img src="asset/socialVector/Vector.png" alt="WhatsApp" style="cursor: pointer" onclick="window.open(`https://www.instagram.com/cicimandarin.idn?igsh=aDg5eWU2a25wNzJt`)" />
+        <img src="asset/socialVector/Vector-1.png" alt="Twitter" style="cursor: pointer" onclick="window.open(`http://wa.me/+6287853909383`)" />
+        <img src="asset/socialVector/Vector-2.png" alt="YouTube" style="cursor: pointer" onclick="window.open(`https://www.tiktok.com/@cicimandarin.idn?_t=ZS-8yZHonMJwAC&_r=1`)" />
+        <img src="asset/socialVector/Vector-3.png" alt="LinkedIn" style="cursor: pointer" onclick="window.open(`https://www.linkedin.com/company/cici-mandarin-idn/`)" />
+        <img
+          src="asset/socialVector/Vector-4.png"
+          alt="WhatsApp"
+          style="cursor: pointer"
+          onclick="window.open(`https://mail.google.com/mail/u/0/#inbox?compose=CllgCJTKXCZMqzXWPcmdScFNqGlPsVxvGNFVmlVLBgglDJWgChHFkrlvMMvFNbpJNXKvjcxtVLV`)"
+        />
+      </div>
+      <div class="footer-navigation">
+        <a href="index.html" class="footer-link">HOME</a>
+        <a href="about.html" class="footer-link">ABOUT US</a>
+        <a href="service1.html" class="footer-link">SERVICES</a>
+        <a href="contactUs.html" class="footer-link">CONTACT US</a>
+      </div>
     </footer>
-        
+
     <script defer src="./script.js"></script>
-</body>
+  </body>
 </html>

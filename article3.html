@@ -1,130 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cici Mandarin</title>
-    <link rel="icon" type="image/png" href="/asset/LogoSecondary.png">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="article.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="asset/LogoSecondary.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="article.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/counterapi/dist/counter.browser.min.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="navbar">
-        <div class="navbar-left">
-            <img src="/asset/LogoSecondary.png" alt="Logo" class="navbar-logo">
-        </div>
-        <div class="navbar-right">
-            <a href="index.html" class="navbar-link fontInterActive">HOME</a>
-            <a href="about.html" class="navbar-link fontInter">ABOUT US</a>
-            <div class="navbar-dropdown">
-                <a class="navbar-link fontInter" id="servicesDropdownBtn">SERVICES</a>
-                <div class="dropdown-content" id="servicesDropdownContent" style="display: none; z-index: 100000;">
-                    <div class="dropdown-service-list" style="flex-direction: row; width: 100%; align-items:flex-start; justify-content: center; padding: 10px; z-index: 1000;">
-                        <div class="dropdown-service-item" id="serviceLang" style="border-radius: 0 0 0 13px;">
-                            <img src="/asset/navbar/languages 1.png" alt="Language Course Expert" class="dropdown-service-img">
-                            <a href="service1.html" class="dropdown-link">Cici Language Course Expert</a>
-                        </div>
-                        <div class="dropdown-service-item" id="serviceStudy">
-                            <img src="/asset/navbar/congratulation 1.png" alt="Study Abroad Expert" class="dropdown-service-img">
-                            <a href="service2.html" class="dropdown-link">Cici Study Abroad Expert</a>
-                        </div>
-                        <div class="dropdown-service-item" id="serviceTour">
-                            <img src="/asset/navbar/plane (2) 1.png" alt="Tour Travel Expert" class="dropdown-service-img">
-                            <a href="service3.html" class="dropdown-link">Cici Tour Travel Expert</a>
-                        </div>
-                        <div class="dropdown-service-item" id="serviceCareer">
-                            <img src="/asset/navbar/bag (1) 1.png" alt="Career Link Expert" class="dropdown-service-img">
-                            <a href="service4.html" class="dropdown-link">Cici Career Link Expert</a>
-                        </div>
-                    </div>
-                </div>
+      <div class="navbar-left">
+        <img src="asset/LogoSecondary.png" alt="Logo" class="navbar-logo" />
+      </div>
+      <div class="navbar-right">
+        <a href="index.html" class="navbar-link fontInterActive">HOME</a>
+        <a href="about.html" class="navbar-link fontInter">ABOUT US</a>
+        <div class="navbar-dropdown">
+          <a class="navbar-link fontInter" id="servicesDropdownBtn">SERVICES</a>
+          <div class="dropdown-content" id="servicesDropdownContent" style="display: none; z-index: 100000">
+            <div class="dropdown-service-list" style="flex-direction: row; width: 100%; align-items: flex-start; justify-content: center; padding: 10px; z-index: 1000">
+              <div class="dropdown-service-item" id="serviceLang" style="border-radius: 0 0 0 13px">
+                <img src="asset/navbar/languages 1.png" alt="Language Course Expert" class="dropdown-service-img" />
+                <a href="service1.html" class="dropdown-link">Cici Language Course Expert</a>
+              </div>
+              <div class="dropdown-service-item" id="serviceStudy">
+                <img src="asset/navbar/congratulation 1.png" alt="Study Abroad Expert" class="dropdown-service-img" />
+                <a href="service2.html" class="dropdown-link">Cici Study Abroad Expert</a>
+              </div>
+              <div class="dropdown-service-item" id="serviceTour">
+                <img src="asset/navbar/plane (2) 1.png" alt="Tour Travel Expert" class="dropdown-service-img" />
+                <a href="service3.html" class="dropdown-link">Cici Tour Travel Expert</a>
+              </div>
+              <div class="dropdown-service-item" id="serviceCareer">
+                <img src="asset/navbar/bag (1) 1.png" alt="Career Link Expert" class="dropdown-service-img" />
+                <a href="service4.html" class="dropdown-link">Cici Career Link Expert</a>
+              </div>
             </div>
-            <a href="contactUs.html" class="navbar-link fontInter">CONTACT US</a>
-            <button class="navbar-img-btn" id="joinBtn">
-                <img src="/asset/JOINUS.png" alt="Join Us Button" id="joinBtnImage" class="navbar-btn-img" onclick="window.open(`http://wa.me/+6287853909383`)">
-            </button>
+          </div>
         </div>
-        <div class="navbar-hamburger" id="hamburger" onclick="toggleMenu()">
-            <span class="hamburger-icon" id="icon1"></span>
-            <span class="hamburger-icon" id="icon2"></span>
-            <span class="hamburger-icon" id="icon3"></span>
+        <a href="contactUs.html" class="navbar-link fontInter">CONTACT US</a>
+        <button class="navbar-img-btn" id="joinBtn">
+          <img src="asset/JOINUS.png" alt="Join Us Button" id="joinBtnImage" class="navbar-btn-img" onclick="window.open(`http://wa.me/+6287853909383`)" />
+        </button>
+      </div>
+      <div class="navbar-hamburger" id="hamburger" onclick="toggleMenu()">
+        <span class="hamburger-icon" id="icon1"></span>
+        <span class="hamburger-icon" id="icon2"></span>
+        <span class="hamburger-icon" id="icon3"></span>
+      </div>
+      <div class="navbar-mobile-menu" id="navbarMobileMenu">
+        <a href="index.html" class="navbar-link fontInter">HOME</a>
+        <a href="about.html" class="navbar-link fontInter">ABOUT US</a>
+        <div class="navbar-dropdown">
+          <a href="#" class="navbar-link fontInter" id="mobileServicesDropdownBtn" onclick="toggleMobileServicesDropdown(event)">SERVICES</a>
+          <div class="dropdown-content" id="mobileServicesDropdownContent" style="display: none; flex-direction: column">
+            <a href="service1.html" class="navbar-link">Language Course Expert</a>
+            <a href="service2.html" class="navbar-link">Study Abroad Expert</a>
+            <a href="service3.html" class="navbar-link">Tour Travel Expert</a>
+            <a href="service4.html" class="navbar-link">Career Link Expert</a>
+          </div>
         </div>
-        <div class="navbar-mobile-menu" id="navbarMobileMenu">
-            <a href="index.html" class="navbar-link fontInter">HOME</a>
-            <a href="about.html" class="navbar-link fontInter">ABOUT US</a>
-            <div class="navbar-dropdown">
-                <a href="#" class="navbar-link fontInter" id="mobileServicesDropdownBtn" onclick="toggleMobileServicesDropdown(event)">SERVICES</a>
-                <div class="dropdown-content" id="mobileServicesDropdownContent" style="display: none; flex-direction: column;">
-                    <a href="service1.html" class="navbar-link">Language Course Expert</a>
-                    <a href="service2.html" class="navbar-link">Study Abroad Expert</a>
-                    <a href="service3.html" class="navbar-link">Tour Travel Expert</a>
-                    <a href="service4.html" class="navbar-link">Career Link Expert</a>
-                </div>
-            </div>
-            <a href="contactUs.html" class="navbar-link fontInter">CONTACT US</a>
-        </div>
+        <a href="contactUs.html" class="navbar-link fontInter">CONTACT US</a>
+      </div>
     </nav>
-    
+
     <div class="article-container">
-        <div class="top-title">
-            <h1>CICIUNBOXCHINA #3: </h1>
-            <h1 class="text-title">BUKAN CUMAN TREN: MANDARIN JADI BAHASA STRATEGIS DUNIA!</h1>
-        </div>
-        <p class="author">Celia Vanessa Hakim</p>
-        
-        <img src="/asset/CICI MANDARIN - COVER ARTIKEL 3 DALAM.png" alt="" class="dalam-img">
-        
-        <hr>
-        <p>“你好! We’re back with more China updates from Cici!”</p>
-    
-        <p>Di tengah gempuran tren belajar bahasa Korea, Jepang, atau Spanyol, Bahasa Mandarin berdiri kokoh sebagai salah satu bahasa yang paling diminati di dunia. Ini bukan hanya soal lagu Mandarin yang bisa bawa suasana atau C-drama yang bikin baper GenZ sekarang, tapi Bahasa Mandarin menyimpan kekuatan strategis yang menjadikannya lebih dari sekedar tren sesaat.</p>
-    
-        <h2>Mandarin sebagai Bahasa Global</h2>
-        <p>Taukah kamu bahwa Bahasa Mandarin digunakan oleh lebih dari 1 miliar orang di seluruh dunia? Ini bukan karena populasi di Tiongkok yang kini mencapai 1.411 miliar (Worldometers, 2025), tapi karena pengaruh Tiongkok yang semakin kuat di dunia internasional. Bahasa Mandarin tidak hanya digunakan di Tiongkok, tetapi juga di Taiwan, Singapura, Malaysia, dan oleh diaspora Tiongkok di seluruh dunia. Bahkan, Bahasa Mandarin juga merupakan bahasa resmi di Perserikatan Bangsa-Bangsa (PBB).</p>
-    
-        <p>Popularitas ini mendorong banyak negara untuk memasukkan Bahasa Mandarin sebagai bagian dari kurikulum pendidikan nasional mereka. Misalnya, di Indonesia, banyak sekolah yang menawarkan Mandarin sebagai mata pelajaran wajib. Di negara Barat seperti Inggris dan Australia, Mandarin bahkan digadang sebagai “bahasa masa depan”.
+      <div class="top-title">
+        <h1>CICIUNBOXCHINA #3:</h1>
+        <h1 class="text-title">BUKAN CUMAN TREN: MANDARIN JADI BAHASA STRATEGIS DUNIA!</h1>
+      </div>
+      <p class="author">Celia Vanessa Hakim</p>
+
+      <img src="asset/CICI MANDARIN - COVER ARTIKEL 3 DALAM.png" alt="" class="dalam-img" />
+
+      <hr />
+      <p>“你好! We’re back with more China updates from Cici!”</p>
+
+      <p>
+        Di tengah gempuran tren belajar bahasa Korea, Jepang, atau Spanyol, Bahasa Mandarin berdiri kokoh sebagai salah satu bahasa yang paling diminati di dunia. Ini bukan hanya soal lagu Mandarin yang bisa bawa suasana atau C-drama yang
+        bikin baper GenZ sekarang, tapi Bahasa Mandarin menyimpan kekuatan strategis yang menjadikannya lebih dari sekedar tren sesaat.
+      </p>
+
+      <h2>Mandarin sebagai Bahasa Global</h2>
+      <p>
+        Taukah kamu bahwa Bahasa Mandarin digunakan oleh lebih dari 1 miliar orang di seluruh dunia? Ini bukan karena populasi di Tiongkok yang kini mencapai 1.411 miliar (Worldometers, 2025), tapi karena pengaruh Tiongkok yang semakin kuat
+        di dunia internasional. Bahasa Mandarin tidak hanya digunakan di Tiongkok, tetapi juga di Taiwan, Singapura, Malaysia, dan oleh diaspora Tiongkok di seluruh dunia. Bahkan, Bahasa Mandarin juga merupakan bahasa resmi di Perserikatan
+        Bangsa-Bangsa (PBB).
+      </p>
+
+      <p>
+        Popularitas ini mendorong banyak negara untuk memasukkan Bahasa Mandarin sebagai bagian dari kurikulum pendidikan nasional mereka. Misalnya, di Indonesia, banyak sekolah yang menawarkan Mandarin sebagai mata pelajaran wajib. Di
+        negara Barat seperti Inggris dan Australia, Mandarin bahkan digadang sebagai “bahasa masa depan”.
+      </p>
+
+      <h2>BRI dan Confucius Institute Menjadi Senjata Pengaruh Tiongkok Terhadap Dunia</h2>
+      <p>
+        Dalam inisiatif besar Tiongkok, yaitu Belt and Road Initiative (BRI), yang merupakan mega proyek lintas benua yang diasosiasikan oleh Presiden Xi Jinping pada tahun 2013, Bahasa Mandarin menjadi kunci komunikasi antara Tiongkok dan
+        lebih dari 140 negara mitra kerja sama. Bagaimana tidak? Sejak 6 tahun pelaksanaan BRI, pemerintah Tiongkok telah menandatangani 173 perjanjian kerja sama dengan 125 negara dari Asia, Eropa, Afrika, dan Amerika Latin, serta dengan
+        29 organisasi internasional (Ni Made Vira Saraswati, 2019). Oleh sebab itu, tidak dapat dipungkiri Bahasa Mandarin mampu memperluas jejaring diplomatik dan politik global.
+      </p>
+
+      <p>
+        Tidak hanya itu, tetapi hal ini pun membuat akses terhadap penyebaran budaya Tiongkok ke seluruh dunia. Buktinya, melalui program Confucius Institute, yaitu Tiongkok menyebarkan pembelajaran Bahasa Mandarin dan kebudayaannya ke
+        seluruh penjuru dunia. Hal ini merupakan bentuk soft power, yaitu pengaruh yang dibangun lewat budaya dan pendidikan. Pemerintah Tiongkok menginvestasikan miliaran dollar untuk merealisasikan program Confucius Institute sejak tahun
+        2007 ketika masa pemerintahan Presiden Hu Jintao. Salah satu bentuk soft power inilah yang menjadi salah satu strategi dan langkah utama Tiongkok untuk menjadi negara superpower (Thung Ju Lan, 2017).
+      </p>
+
+      <h2>Mandarin dan Dunia Bisnis</h2>
+      <p>
+        Dalam dunia bisnis, Bahasa Mandarin bukan hanya nilai tambah, tapi juga senjata kompetitif. Bayangkan ada beberapa banyak lowongan kerja di luar sana yang membutuhkan kemampuan Bahasa Mandarin. Tidak dapat dipungkiri bahwa hal ini
+        bisa terjadi karena Tiongkok kini menjadi kekuatan ekonomi terbesar kedua di dunia, dan menjadi mitra dagang utama bagi banyak negara, termasuk Indonesia.
+      </p>
+
+      <p>
+        Banyak perusahaan multinasional mencari tenaga kerja yang mampu berbahasa Mandarin untuk berkomunikasi dengan klien dan mitra dari Tiongkok. Di Indonesia sendiri, terdapat sekitar 1.000 perusahaan Tiongkok yang beroperasi di
+        Indonesia. 17% di antaranya bergerak di bidang konstruksi, 15% di sektor pertambangan, dan 13% lainnya di sektor kelistrikan. Keberadaan perusahaan Tiongkok di Indonesia telah membantu menciptakan lapangan pekerjaan bagi masyarakat
+        Indonesia (CNN Indonesia, 2018). Tidak hanya itu, tetapi dalam dunia investasi pun, Tiongkok merupakan salah satu penanam modal asing ketiga terbesar di Indonesia dengan realisasi 8.1 miliar USD pada 2024 (Kementerian Koordinator
+        Bidang Perekonomian Republik Indonesia, 2025). Oleh karena itu, menguasai Bahasa Mandarin tentunya dapat membuka pintu atas berbagai kesempatan karir di berbagai sektor, termasuk ekspor-impor, perbankan internasional, hukum,
+        teknologi, hingga diplomasi.
+      </p>
+
+      <h2>Investasi Bahasa untuk Masa Depan</h2>
+      <p>
+        Belajar Bahasa Mandarin bukan soal ikut tren, tapi investasi jangka panjang di era multipolar, ketika pengaruh Tiongkok di bidang politik, ekonomi, dan budaya terus meningkat. Dengan menguasai Mandarin, kamu membuka jalan menuju
+        peluang global yang semakin luas. Seperti kata pepatah Tiongkok, “学一门语言，就是多一个灵魂” yang artinya “Belajar satu bahasa berarti memiliki satu jiwa tambahan”.
+      </p>
+
+      <p>
+        Di tengah dunia yang terus berubah dan terhubung, kemampuan berbahasa Mandarin adalah bekal yang tak ternilai. Disinilah Cici Mandarin hadir sebagai tempat Anda mempelajari Bahasa Mandarin untuk investasi jangka panjang. Cici
+        Mandarin menyediakan kurikulum yang selaras dengan kebutuhan global serta Anda akan diajarkan oleh pengajar yang berpengalaman dan profesional. Ayo buruan daftar les Bahasa Mandarin di Cici Mandarin!
+      </p>
+
+      <p><strong>Stay curious, stay kind, and see you in the next chapter of #CiciUnboxChina!</strong></p>
+
+      <div class="references">
+        <h2>Referensi</h2>
+        <p>
+          CNN Indonesia. (2018). “Sekitar 1.000 Perusahaan China Beroperasi di Indonesia.” <br />
+          <a href="https://www.cnnindonesia.com/ekonomi/20181127132649-92-349567/sekitar-1000-perusahaan-china-beroperasi-di-indonesia. ">
+            https://www.cnnindonesia.com/ekonomi/20181127132649-92-349567/sekitar-1000-perusahaan-china-beroperasi-di-indonesia.
+          </a>
         </p>
-    
-        <h2>BRI dan Confucius Institute Menjadi Senjata Pengaruh Tiongkok Terhadap Dunia
-        </h2>
-        <p>Dalam inisiatif besar Tiongkok, yaitu Belt and Road Initiative (BRI), yang merupakan mega proyek lintas benua yang diasosiasikan oleh Presiden Xi Jinping pada tahun 2013,  Bahasa Mandarin menjadi kunci komunikasi antara Tiongkok dan lebih dari 140 negara mitra kerja sama. Bagaimana tidak? Sejak 6 tahun pelaksanaan BRI, pemerintah Tiongkok telah menandatangani 173 perjanjian kerja sama dengan 125 negara dari Asia, Eropa, Afrika, dan Amerika Latin, serta dengan 29 organisasi internasional (Ni Made Vira Saraswati, 2019). Oleh sebab itu, tidak dapat dipungkiri Bahasa Mandarin mampu memperluas jejaring diplomatik dan politik global. </p>
-    
-        <p>Tidak hanya itu, tetapi hal ini pun membuat akses terhadap penyebaran budaya Tiongkok ke seluruh dunia. Buktinya, melalui program Confucius Institute, yaitu Tiongkok menyebarkan pembelajaran Bahasa Mandarin dan kebudayaannya ke seluruh penjuru dunia. Hal ini merupakan bentuk soft power, yaitu pengaruh yang dibangun lewat budaya dan pendidikan. Pemerintah Tiongkok menginvestasikan miliaran dollar untuk merealisasikan program Confucius Institute sejak tahun 2007 ketika masa pemerintahan Presiden Hu Jintao. Salah satu bentuk soft power inilah yang menjadi salah satu strategi dan langkah utama Tiongkok untuk menjadi negara superpower (Thung Ju Lan, 2017).
+        <p>
+          Kementerian Koordinator Bidang Perekonomian Republik Indonesia. (2025). “Peringati Momentum 75 Tahun Jalinan Hubungan Diplomatik, Indonesia-Tiongkok Tingkatkan Kerja Sama Ekonomi.”<br />
+          <a href="https://ekon.go.id/publikasi/detail/6390/peringati-momentum-75-tahun-jalinan-hubungan-diplomatik-indonesia-tiongkok-tingkatkan-kerja-sama-ekonomi. "
+            >https://ekon.go.id/publikasi/detail/6390/peringati-momentum-75-tahun-jalinan-hubungan-diplomatik-indonesia-tiongkok-tingkatkan-kerja-sama-ekonomi.
+          </a>
         </p>
-    
-        <h2>Mandarin dan Dunia Bisnis</h2>
-        <p>Dalam dunia bisnis, Bahasa Mandarin bukan hanya nilai tambah, tapi juga senjata kompetitif. Bayangkan ada beberapa banyak lowongan kerja di luar sana yang membutuhkan kemampuan Bahasa Mandarin. Tidak dapat dipungkiri bahwa hal ini bisa terjadi karena Tiongkok kini menjadi kekuatan ekonomi terbesar kedua di dunia, dan menjadi mitra dagang utama bagi banyak negara, termasuk Indonesia. 
+
+        <p>
+          Lan, Thung Ju. (2017). “Confucius Institute at Universitas Al Azhar, Jakarta; The unseen power of China.” Journal of Humanities of Indonesia, 153. Saraswati, Ni Made Vira. (2019). “Menilik Perjanjian Indonesia-Cina dalam Kerangka
+          Belt and Road Initiative (BRI) dalam Perspektif Ketahanan Nasional. Jurnal Kajian Lemhanas RI, 56.<br />
         </p>
-    
-        <p>Banyak perusahaan multinasional mencari tenaga kerja yang mampu berbahasa Mandarin untuk berkomunikasi dengan klien dan mitra dari Tiongkok. Di Indonesia sendiri, terdapat sekitar 1.000 perusahaan Tiongkok yang beroperasi di Indonesia. 17% di antaranya bergerak di bidang konstruksi, 15% di sektor pertambangan, dan 13% lainnya di sektor kelistrikan. Keberadaan perusahaan Tiongkok di Indonesia telah membantu menciptakan lapangan pekerjaan bagi masyarakat Indonesia (CNN Indonesia, 2018). Tidak hanya itu, tetapi dalam dunia investasi pun, Tiongkok merupakan salah satu penanam modal asing ketiga terbesar di Indonesia dengan realisasi 8.1 miliar USD pada 2024 (Kementerian Koordinator Bidang Perekonomian Republik Indonesia, 2025). Oleh karena itu, menguasai Bahasa Mandarin tentunya dapat membuka pintu atas berbagai kesempatan karir di berbagai sektor, termasuk ekspor-impor, perbankan internasional, hukum, teknologi, hingga diplomasi. 
+
+        <p>
+          Worldometers. (2025). China Population.
+          <a href="https://www.worldometers.info/world-population/china-population/#:~:text=Populasi%20Tiongkok%20saat%20ini%20adalah,%2C20%25%20total%20populasi%20dunia%20."
+            >https://www.worldometers.info/world-population/china-population/#:~:text=Populasi%20Tiongkok%20saat%20ini%20adalah,%2C20%25%20total%20populasi%20dunia%20.</a
+          >
         </p>
-    
-        <h2>Investasi Bahasa untuk Masa Depan</h2>
-        <p>Belajar Bahasa Mandarin bukan soal ikut tren, tapi investasi jangka panjang di era multipolar, ketika pengaruh Tiongkok di bidang politik, ekonomi, dan budaya terus meningkat. Dengan menguasai Mandarin, kamu membuka jalan menuju peluang global yang semakin luas. Seperti kata pepatah Tiongkok, “学一门语言，就是多一个灵魂” yang artinya “Belajar satu bahasa berarti memiliki satu jiwa tambahan”.</p>
-        
-        <p>Di tengah dunia yang terus berubah dan terhubung, kemampuan berbahasa Mandarin adalah bekal yang tak ternilai. Disinilah Cici Mandarin hadir sebagai tempat Anda mempelajari Bahasa Mandarin untuk investasi jangka panjang. Cici Mandarin menyediakan kurikulum yang selaras dengan kebutuhan global serta Anda akan diajarkan oleh pengajar yang berpengalaman dan profesional. Ayo buruan daftar les Bahasa Mandarin di Cici Mandarin!</p>
-        
-        <p><strong>Stay curious, stay kind, and see you in the next chapter of #CiciUnboxChina!</strong></p>
-    
-        <div class="references">
-            <h2>Referensi</h2>
-            <p> CNN Indonesia. (2018). “Sekitar 1.000 Perusahaan China Beroperasi di Indonesia.” <br>
-            <a href="https://www.cnnindonesia.com/ekonomi/20181127132649-92-349567/sekitar-1000-perusahaan-china-beroperasi-di-indonesia. "> https://www.cnnindonesia.com/ekonomi/20181127132649-92-349567/sekitar-1000-perusahaan-china-beroperasi-di-indonesia. </a></p>
-            <p> Kementerian Koordinator Bidang Perekonomian Republik Indonesia. (2025). “Peringati Momentum 75 Tahun Jalinan Hubungan Diplomatik, Indonesia-Tiongkok Tingkatkan Kerja Sama Ekonomi.”<br>
-            <a href="https://ekon.go.id/publikasi/detail/6390/peringati-momentum-75-tahun-jalinan-hubungan-diplomatik-indonesia-tiongkok-tingkatkan-kerja-sama-ekonomi. ">https://ekon.go.id/publikasi/detail/6390/peringati-momentum-75-tahun-jalinan-hubungan-diplomatik-indonesia-tiongkok-tingkatkan-kerja-sama-ekonomi. </a></p>
-    
-            <p>Lan, Thung Ju. (2017). “Confucius Institute at Universitas Al Azhar, Jakarta; The unseen power of China.” Journal of Humanities of Indonesia, 153.
-                Saraswati, Ni Made Vira. (2019). “Menilik Perjanjian Indonesia-Cina dalam Kerangka Belt and Road Initiative (BRI) dalam Perspektif Ketahanan Nasional. Jurnal Kajian Lemhanas RI, 56.<br></p>
-    
-            <p> Worldometers. (2025). China Population. <a href="https://www.worldometers.info/world-population/china-population/#:~:text=Populasi%20Tiongkok%20saat%20ini%20adalah,%2C20%25%20total%20populasi%20dunia%20.">https://www.worldometers.info/world-population/china-population/#:~:text=Populasi%20Tiongkok%20saat%20ini%20adalah,%2C20%25%20total%20populasi%20dunia%20.</a> </p>
-        </div>
-    </div>  
+      </div>
+    </div>
 
     <script defer src="./script.js"></script>
-</body>
+  </body>
 </html>
