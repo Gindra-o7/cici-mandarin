@@ -256,13 +256,13 @@ document.addEventListener("click", function (e) {
 function toggleMobileServicesDropdown(event) {
   event.preventDefault();
   var content = document.getElementById("mobileServicesDropdownContent");
-  content.style.display = content.style.display === "none" ? "flex" : "none";
+  content.classList.toggle("show");
 }
 
 document.getElementById("mobileServicesDropdownBtn").onclick = function (e) {
   e.preventDefault();
   var content = document.getElementById("mobileServicesDropdownContent");
-  content.style.display = content.style.display === "none" ? "flex" : "none";
+  content.classList.toggle("show");
 };
 
 // Style adjustments for dropdown items and images

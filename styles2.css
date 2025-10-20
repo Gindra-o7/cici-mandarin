@@ -136,7 +136,7 @@ html {
   padding: 0;
   overflow: visible;
   position: absolute;
-  right: 100px;
+  right: 65px;
 }
 
 .navbar-btn-img {
@@ -230,8 +230,9 @@ html {
   background: #cb0d0d;
   position: absolute;
   top: 25px;
-  right: 0;
-  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
   border-radius: 0 0 14px 14px;
   padding: 20px 0;
   z-index: 100;
@@ -2317,6 +2318,19 @@ html {
 }
 
 @media (max-width: 430px) {
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
   .navbar-hamburger {
     display: none !important;
   }
@@ -2326,17 +2340,18 @@ html {
     flex-direction: row;
     align-items: center;
     gap: 4px;
-    margin-right: 81px;
+    margin-right: 3rem;
     padding: 0 4px;
     overflow-x: auto;
     flex-wrap: nowrap;
+    justify-content: flex-end;
   }
 
   .navbar-link,
   .fontInter,
   .fontInterActive {
-    font-size: 9.5px !important;
-    padding: 3px 2.5px !important;
+    font-size: 8px !important;
+    padding: 2px 2.5px !important;
     white-space: nowrap;
   }
   .navbar-logo {
