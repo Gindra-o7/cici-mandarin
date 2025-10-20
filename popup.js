@@ -7,19 +7,19 @@ let popupStep = 1;
 document.querySelector(".heroHome-img").addEventListener("click", () => {
   popup.style.display = "flex";
   popupStep = 1;
-  popupImg.src = "asset/popup1.png";
+  popupImg.src = "./asset/popup1.png";
 });
 
 window.addEventListener("DOMContentLoaded", () => {
   popup.style.display = "flex";
   popupStep = 1;
-  popupImg.src = "asset/popup1.png";
+  popupImg.src = "./asset/popup1.png";
 });
 
 popupImg.addEventListener("click", () => {
   if (popupStep === 1) {
     popupStep = 2;
-    popupImg.src = "asset/popup2.png";
+    popupImg.src = "./asset/popup2.png";
   } else {
     popup.style.display = "none";
   }

@@ -145,7 +145,7 @@ html {
 }
 
 .containerHome {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("asset/home-heroimage.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./asset/home-heroimage.png");
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -215,7 +215,7 @@ html {
 
   .containerHome {
     height: 50vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("asset/home-heroimage.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./asset/home-heroimage.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -273,7 +273,7 @@ html {
   }
   .containerHome {
     height: 50vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("asset/home-heroimage.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./asset/home-heroimage.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -397,7 +397,7 @@ html {
 }
 
 .containerOurService {
-  background-image: url("asset/secondsection.png");
+  background-image: url("./asset/secondsection.png");
   height: 100vh;
   display: flex;
   width: auto;
@@ -544,7 +544,7 @@ html {
 }
 
 .containerAdditionalPro {
-  background-image: url("asset/3ADDITIONALPROCOBA.png");
+  background-image: url("./asset/3ADDITIONALPROCOBA.png");
   height: 100vh;
   display: flex;
   width: auto;
@@ -610,7 +610,7 @@ html {
 }
 
 .WhyUsContainer {
-  background-image: url("asset/BGWHYUS.png");
+  background-image: url("./asset/BGWHYUS.png");
   height: 110vh;
   display: flex;
   flex-direction: column;
@@ -769,7 +769,7 @@ html {
 }
 
 .success-container {
-  background-image: url("asset/5SUCCESSSTORIES.png");
+  background-image: url("./asset/5SUCCESSSTORIES.png");
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -869,7 +869,7 @@ html {
 }
 
 .visitInstagramContainer {
-  background-image: url("asset/CLOUD.png");
+  background-image: url("./asset/CLOUD.png");
   height: 60vh;
   width: 100%;
   display: flex;
@@ -917,7 +917,7 @@ html {
 }
 
 .chinaHottestNewsContainer {
-  background-image: url("asset/7CHINA'SHOTTESTNEWS.png");
+  background-image: url("./asset/7CHINA'SHOTTESTNEWS.png");
   height: 92vh;
   background-repeat: no-repeat;
   margin-top: -15vh;
@@ -983,7 +983,7 @@ html {
 }
 
 .footer-container {
-  background-image: url("asset/FOOTER.png");
+  background-image: url("./asset/FOOTER.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1038,7 +1038,7 @@ html {
 }
 
 .aboutUs {
-  background-image: url("asset/1.CICITEAM.png");
+  background-image: url("./asset/1.CICITEAM.png");
   height: 91vh;
   width: 100%;
   display: flex;
@@ -1126,7 +1126,7 @@ html {
 }
 
 .visionMission {
-  background-image: url("asset/2.\ VISION\ MISSION.png");
+  background-image: url("./asset/2.\ VISION\ MISSION.png");
   height: 110vh;
   width: 100%;
   display: flex;
@@ -1148,7 +1148,7 @@ html {
 }
 
 .milestone {
-  background-image: url("asset/3.\ MILESTONE.png");
+  background-image: url("./asset/3.\ MILESTONE.png");
   height: 135vh;
   width: 100%;
   display: flex;
@@ -1228,7 +1228,7 @@ html {
 }
 
 .contactUs {
-  background-image: url("asset/1.\ CONTACT\ US.png");
+  background-image: url("./asset/1.\ CONTACT\ US.png");
   height: 83.5vh;
   width: 100%;
   display: flex;
@@ -1352,7 +1352,7 @@ html {
 
 .FaQ {
   margin-top: -2vh;
-  background-image: url("asset/faq/faq\ 1.png");
+  background-image: url("./asset/faq/faq\ 1.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 84vh;
@@ -1435,7 +1435,7 @@ html {
 
 .testimonyBg {
   margin-top: -2vh;
-  background-image: url("asset/TestimonyBG.png");
+  background-image: url("./asset/TestimonyBG.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -1541,7 +1541,7 @@ html {
 }
 
 .serviceHeroContainer {
-  background-image: url("asset/service2Bg.png");
+  background-image: url("./asset/service2Bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 75vh;
@@ -1565,7 +1565,7 @@ html {
 }
 
 .whoCanJoin {
-  background-image: url("asset/serviceClass.png");
+  background-image: url("./asset/serviceClass.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 82vh;
@@ -1607,7 +1607,7 @@ html {
 }
 
 .serviceGoals {
-  background-image: url("asset/GoalsService2.png");
+  background-image: url("./asset/GoalsService2.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1683,7 +1683,7 @@ html {
 }
 
 .serviceBenefits {
-  background-image: url("asset/BenefitServiceBg2.png");
+  background-image: url("./asset/BenefitServiceBg2.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1830,7 +1830,7 @@ html {
 }
 
 .serviceRoadmaps {
-  background-image: url("asset/RoadmapService2.png");
+  background-image: url("./asset/RoadmapService2.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1850,7 +1850,7 @@ html {
 
 .serviceList {
   margin-top: -2vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("asset/BGService2.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./asset/BGService2.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1927,7 +1927,7 @@ html {
 
 .studentJourney {
   margin-top: -20px;
-  background-image: url("asset/studentJourneyBg.png");
+  background-image: url("./asset/studentJourneyBg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -2354,7 +2354,7 @@ html {
   }
 
   .serviceHeroContainer {
-    background-image: url(asset/mobile/service2/top-background.png);
+    background-image: url(./asset/mobile/service2/top-background.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 83vh;
@@ -2378,7 +2378,7 @@ html {
   }
 
   .serviceGoals {
-    background-image: url(asset/mobile/service2/goals-background.png);
+    background-image: url(./asset/mobile/service2/goals-background.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -2389,7 +2389,7 @@ html {
 
   .serviceList {
     margin-top: -2vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url(asset/mobile/service2/service-background.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url(./asset/mobile/service2/service-background.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -2423,7 +2423,7 @@ html {
   }
 
   .serviceBenefits {
-    background-image: url(asset/mobile/service2/benefits-background.png);
+    background-image: url(./asset/mobile/service2/benefits-background.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -2460,7 +2460,7 @@ html {
   }
 
   .serviceRoadmaps {
-    background-image: url(asset/mobile/service2/roadmap.png);
+    background-image: url(./asset/mobile/service2/roadmap.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -2474,7 +2474,7 @@ html {
 
   .studentJourney {
     margin-top: -20px;
-    background-image: url(asset/mobile/service2/student-journey.png);
+    background-image: url(./asset/mobile/service2/student-journey.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -2505,7 +2505,7 @@ html {
   }
 
   .footer-container {
-    background-image: url(asset/mobile/footer.png);
+    background-image: url(./asset/mobile/footer.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

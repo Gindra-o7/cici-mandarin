@@ -1,11 +1,11 @@
 const joinBtnImage = document.getElementById("joinBtnImage");
 
 joinBtnImage.addEventListener("mouseover", function () {
-  joinBtnImage.src = "asset/JOINUS_HOVER.png";
+  joinBtnImage.src = "./asset/JOINUS_HOVER.png";
 });
 
 joinBtnImage.addEventListener("mouseout", function () {
-  joinBtnImage.src = "asset/JOINUS.png";
+  joinBtnImage.src = "./asset/JOINUS.png";
 });
 
 // Toggle the mobile menu and change the hamburger icon to X
@@ -57,7 +57,7 @@ try {
 // Simple carousel functionality
 // List of image sources for the carousel
 // Array to store the image sources
-const imageSources = ["asset/whyUs/1.mp4", "asset/whyUs/2.mp4", "asset/whyUs/3.mp4", "asset/whyUs/4.mp4", "asset/whyUs/5.mp4", "asset/whyUs/6.mp4", "asset/whyUs/7.mp4"];
+const imageSources = ["./asset/whyUs/1.mp4", "./asset/whyUs/2.mp4", "./asset/whyUs/3.mp4", "./asset/whyUs/4.mp4", "./asset/whyUs/5.mp4", "./asset/whyUs/6.mp4", "./asset/whyUs/7.mp4"];
 
 let startIndex = 0; // Starting index
 const itemsPerView = 3;
@@ -128,27 +128,27 @@ try {
 } catch (err) {}
 
 const successVideos = [
-  "asset/successStories/videos/1. Fun language class life.mov",
-  "asset/successStories/videos/3. Client product search & purchase journey.mov",
-  "asset/successStories/videos/2. Client job application process.mov",
-  "asset/successStories/videos/4. Client travel experience.mov",
-  "asset/successStories/videos/5. One day beijing tour.mov",
-  "asset/successStories/videos/6. Student university life.mov",
-  "asset/successStories/videos/7. Preschoolers class.mov",
-  "asset/successStories/videos/8. Kids class.mov",
-  "asset/successStories/videos/9. Adult class.mov",
+  "./asset/successStories/videos/1. Fun language class life.mov",
+  "./asset/successStories/videos/3. Client product search & purchase journey.mov",
+  "./asset/successStories/videos/2. Client job application process.mov",
+  "./asset/successStories/videos/4. Client travel experience.mov",
+  "./asset/successStories/videos/5. One day beijing tour.mov",
+  "./asset/successStories/videos/6. Student university life.mov",
+  "./asset/successStories/videos/7. Preschoolers class.mov",
+  "./asset/successStories/videos/8. Kids class.mov",
+  "./asset/successStories/videos/9. Adult class.mov",
 ];
 
 const videoTitle = [
-  "asset/successStories/1. Fun language class life.png",
-  "asset/successStories/2. Client job.png",
-  "asset/successStories/3. Client product research.png",
-  "asset/successStories/4. Client travel.png",
-  "asset/successStories/5. One day beijing tour.png",
-  "asset/successStories/6. Student university.png",
-  "asset/successStories/7. Preschooler Class.png",
-  "asset/successStories/8. Kids class.png",
-  "asset/successStories/9. Adult class.png",
+  "./asset/successStories/1. Fun language class life.png",
+  "./asset/successStories/2. Client job.png",
+  "./asset/successStories/3. Client product research.png",
+  "./asset/successStories/4. Client travel.png",
+  "./asset/successStories/5. One day beijing tour.png",
+  "./asset/successStories/6. Student university.png",
+  "./asset/successStories/7. Preschooler Class.png",
+  "./asset/successStories/8. Kids class.png",
+  "./asset/successStories/9. Adult class.png",
 ];
 
 let currentVideoIndex = 0;
@@ -175,7 +175,7 @@ function renderSuccessVideo(index) {
     const video = document.createElement("video");
     video.src = successVideos[index];
     video.controls = true;
-    video.poster = `asset/successStories/thumbnail/image 11-${index}.png`;
+    video.poster = `./asset/successStories/thumbnail/image 11-${index}.png`;
     video.loading = "lazy";
 
     // Add play/pause button overlay for mobile
@@ -295,14 +295,14 @@ let currFaQIndex = 0;
 
 const parentFaQ = document.querySelector(".FaQ");
 const faqIcons = document.querySelectorAll(".FaQOption .faq-icon");
-const faqIconSrcs = ["asset/faqOption/OPTIONS.png", "asset/faqOption/OPTIONS-1.png", "asset/faqOption/OPTIONS-2.png", "asset/faqOption/OPTIONS-3.png"];
-const faqIconInactiveSrcs = ["asset/faqOption/Inactive.png", "asset/faqOption/Inactive-1.png", "asset/faqOption/Inactive-2.png", "asset/faqOption/Inactive-3.png"];
+const faqIconSrcs = ["./asset/faqOption/OPTIONS.png", "./asset/faqOption/OPTIONS-1.png", "./asset/faqOption/OPTIONS-2.png", "./asset/faqOption/OPTIONS-3.png"];
+const faqIconInactiveSrcs = ["./asset/faqOption/Inactive.png", "./asset/faqOption/Inactive-1.png", "./asset/faqOption/Inactive-2.png", "./asset/faqOption/Inactive-3.png"];
 
-const backgroundSrcs = ["asset/faq/faq 1.png", "asset/faq/faq 1-1.png", "asset/faq/faq 1-2.png", "asset/faq/faq 1-3.png"];
+const backgroundSrcs = ["./asset/faq/faq 1.png", "./asset/faq/faq 1-1.png", "./asset/faq/faq 1-2.png", "./asset/faq/faq 1-3.png"];
 
-const backgroundSrcsMobile = ["asset/mobile/contact-us/faq-1.png", "asset/mobile/contact-us/faq-2.png", "asset/mobile/contact-us/faq-3.png", "asset/mobile/contact-us/faq-4.png"];
+const backgroundSrcsMobile = ["./asset/mobile/contact-us/faq-1.png", "./asset/mobile/contact-us/faq-2.png", "./asset/mobile/contact-us/faq-3.png", "./asset/mobile/contact-us/faq-4.png"];
 
-const bubbleSrcs = ["asset/faq/BUBBLE1.png", "asset/faq/BUBBLE2.png", "asset/faq/BUBBLE3.png", "asset/faq/BUBBLE4.png"];
+const bubbleSrcs = ["./asset/faq/BUBBLE1.png", "./asset/faq/BUBBLE2.png", "./asset/faq/BUBBLE3.png", "./asset/faq/BUBBLE4.png"];
 const faqBubbleImage = document.querySelector(".FaQBubble .faq-bubble-image");
 
 let selectedBackgroundSrcs = backgroundSrcs;

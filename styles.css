@@ -150,7 +150,7 @@ html {
 }
 
 .containerHome {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("asset/home-heroimage.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./asset/home-heroimage.png");
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -220,7 +220,7 @@ html {
 
   .containerHome {
     height: 50vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("asset/home-heroimage.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./asset/home-heroimage.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -307,7 +307,7 @@ html {
   }
   .containerHome {
     height: 50vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("asset/home-heroimage.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./asset/home-heroimage.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -431,7 +431,7 @@ html {
 }
 
 .containerOurService {
-  background-image: url("asset/secondsection.png");
+  background-image: url("./asset/secondsection.png");
   height: 100vh;
   display: flex;
   width: auto;
@@ -581,7 +581,7 @@ html {
 }
 
 .containerAdditionalPro {
-  background-image: url("asset/3ADDITIONALPROCOBA.png");
+  background-image: url("./asset/3ADDITIONALPROCOBA.png");
   height: 88vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -651,7 +651,7 @@ html {
 }
 
 .WhyUsContainer {
-  background-image: url("asset/BGWHYUS.png");
+  background-image: url("./asset/BGWHYUS.png");
   height: 110vh;
   display: flex;
   background-position: center;
@@ -835,7 +835,7 @@ html {
 }
 
 .success-container {
-  background-image: url("asset/5SUCCESSSTORIES.png");
+  background-image: url("./asset/5SUCCESSSTORIES.png");
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -935,7 +935,7 @@ html {
 }
 
 .visitInstagramContainer {
-  background-image: url("asset/CLOUD.png");
+  background-image: url("./asset/CLOUD.png");
   height: 60vh;
   width: 100%;
   display: flex;
@@ -984,7 +984,7 @@ html {
 }
 
 .chinaHottestNewsContainer {
-  background-image: url("asset/7CHINA'SHOTTESTNEWS.png");
+  background-image: url("./asset/7CHINA'SHOTTESTNEWS.png");
   height: 92vh;
   background-repeat: no-repeat;
   margin-top: -15vh;
@@ -1054,7 +1054,7 @@ html {
 }
 
 .footer-container {
-  background-image: url("asset/FOOTER.png");
+  background-image: url("./asset/FOOTER.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1109,7 +1109,7 @@ html {
 }
 
 .aboutUs {
-  background-image: url("asset/1.CICITEAM.png");
+  background-image: url("./asset/1.CICITEAM.png");
   height: 90vh;
   width: 100%;
   display: flex;
@@ -1201,7 +1201,7 @@ html {
 }
 
 .visionMission {
-  background-image: url("asset/2.\ VISION\ MISSION.png");
+  background-image: url("./asset/2.\ VISION\ MISSION.png");
   height: 110vh;
   width: 100%;
   display: flex;
@@ -1226,7 +1226,7 @@ html {
 }
 
 .milestone {
-  background-image: url("asset/3.\ MILESTONE.png");
+  background-image: url("./asset/3.\ MILESTONE.png");
   height: 135vh;
   width: 100%;
   display: flex;
@@ -1703,7 +1703,7 @@ html {
 
 .contactUs {
   position: relative;
-  background-image: url("asset/1.\ CONTACT\ US.png");
+  background-image: url("./asset/1.\ CONTACT\ US.png");
   height: 83.5vh;
   width: 100%;
   display: flex;
@@ -1827,7 +1827,7 @@ html {
 
 .FaQ {
   /* margin-top: -2vh; */
-  background-image: url("asset/faq/faq\ 1.png");
+  background-image: url("./asset/faq/faq\ 1.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 84vh;
@@ -1911,7 +1911,7 @@ html {
 
 .testimonyBg {
   margin-top: 0vh;
-  background-image: url("asset/3.\ WHAT\ THEY\ SAID.png");
+  background-image: url("./asset/3.\ WHAT\ THEY\ SAID.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 78vh;
@@ -2021,7 +2021,7 @@ html {
 }
 
 .serviceHeroContainer {
-  background-image: url("asset/CICI\ LANGUAGE\ COURSE\ EXPERT.png");
+  background-image: url("./asset/CICI\ LANGUAGE\ COURSE\ EXPERT.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 82vh;
@@ -2045,7 +2045,7 @@ html {
 }
 
 .whoCanJoin {
-  background-image: url("asset/serviceClass.png");
+  background-image: url("./asset/serviceClass.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 82vh;
@@ -2087,7 +2087,7 @@ html {
 }
 
 .serviceGoals {
-  background-image: url("asset/3.\ GOALS.png");
+  background-image: url("./asset/3.\ GOALS.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -2103,7 +2103,7 @@ html {
 }
 
 .servicePrograms {
-  background-image: url("asset/4.\ PROGRAMS.png");
+  background-image: url("./asset/4.\ PROGRAMS.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -2176,7 +2176,7 @@ html {
 
 .serviceBenefits {
   margin-top: -5px;
-  background-image: url("asset/serviceBenefits.png");
+  background-image: url("./asset/serviceBenefits.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -2322,7 +2322,7 @@ html {
 }
 
 .serviceRoadmaps {
-  background-image: url("asset/ROADMAPService1.png");
+  background-image: url("./asset/ROADMAPService1.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -2489,7 +2489,7 @@ html {
   }
 
   .containerHome {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("asset/home-heroimage.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./asset/home-heroimage.png");
     display: flex;
     height: 100vh;
     justify-content: center;
@@ -2575,7 +2575,7 @@ html {
   }
 
   .aboutUs {
-    background-image: url("asset/1.CICITEAM.png");
+    background-image: url("./asset/1.CICITEAM.png");
     height: 85vh;
   }
 
@@ -2694,7 +2694,7 @@ html {
   }
 
   .containerOurService {
-    background-image: url("asset/secondsection.png");
+    background-image: url("./asset/secondsection.png");
     height: 120vh;
   }
 
@@ -2932,7 +2932,7 @@ html {
   }
 
   .visitInstagramContainer {
-    background-image: url("asset/CLOUD.png");
+    background-image: url("./asset/CLOUD.png");
     height: 45vh !important;
     width: 100%;
     display: flex;
@@ -3349,7 +3349,7 @@ html {
   }
 
   .containerHome {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("asset/home-heroimage.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./asset/home-heroimage.png");
     display: flex;
     justify-content: center;
     align-items: center;
@@ -3469,7 +3469,7 @@ html {
   }
 
   .containerHome {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(asset/mobile/home/top-image.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./asset/mobile/home/top-image.png);
     display: flex;
     height: 58vh;
     justify-content: center;
@@ -3492,7 +3492,7 @@ html {
   }
 
   .containerOurService {
-    background-image: url(asset/mobile/home/wall-image.png);
+    background-image: url(./asset/mobile/home/wall-image.png);
     height: 56vh;
     display: flex;
     width: auto;
@@ -3507,7 +3507,7 @@ html {
   }
 
   .containerAdditionalPro {
-    background-image: url(asset/mobile/home/additional-service.png);
+    background-image: url(./asset/mobile/home/additional-service.png);
     height: 56vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -3537,7 +3537,7 @@ html {
   }
 
   .WhyUsContainer {
-    background-image: url(asset/mobile/home/why-us.png);
+    background-image: url(./asset/mobile/home/why-us.png);
     height: 87vh;
     display: flex;
     background-position: center;
@@ -3621,7 +3621,7 @@ html {
   }
 
   .success-container {
-    background-image: url(asset/mobile/home/cicifam-story.png);
+    background-image: url(./asset/mobile/home/cicifam-story.png);
     height: 86vh;
     display: flex;
     flex-direction: column;
@@ -3725,7 +3725,7 @@ html {
   }
 
   .visitInstagramContainer {
-    background-image: url(asset/mobile/home/learn-chinese.png);
+    background-image: url(./asset/mobile/home/learn-chinese.png);
     height: 76vh;
     width: 100%;
     display: flex;
@@ -3748,7 +3748,7 @@ html {
   }
 
   .chinaHottestNewsContainer {
-    background-image: url(asset/mobile/home/china-hottest-news.png);
+    background-image: url(./asset/mobile/home/china-hottest-news.png);
     height: 60vh;
     background-repeat: no-repeat;
     margin-top: -39px;
@@ -3772,7 +3772,7 @@ html {
   }
 
   .aboutUs {
-    background-image: url(asset/mobile/about-us/top-image.png);
+    background-image: url(./asset/mobile/about-us/top-image.png);
     height: 100vh;
   }
 
@@ -3804,7 +3804,7 @@ html {
   }
 
   .visionMission {
-    background-image: url(asset/mobile/about-us/vission-mission.png);
+    background-image: url(./asset/mobile/about-us/vission-mission.png);
     height: 85vh;
     width: 100%;
     display: flex;
@@ -3819,7 +3819,7 @@ html {
   }
 
   .milestone {
-    background-image: url(asset/mobile/about-us/milestone.png);
+    background-image: url(./asset/mobile/about-us/milestone.png);
     height: 61vh;
     width: 100%;
     display: flex;
@@ -3829,7 +3829,7 @@ html {
   }
 
   .serviceHeroContainer {
-    background-image: url(asset/mobile/service1/top-image.png);
+    background-image: url(./asset/mobile/service1/top-image.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 76vh;
@@ -3848,7 +3848,7 @@ html {
   }
 
   .whoCanJoin {
-    background-image: url(asset/mobile/service1/who-can-join.png);
+    background-image: url(./asset/mobile/service1/who-can-join.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 67vh;
@@ -3876,7 +3876,7 @@ html {
   }
 
   .serviceGoals {
-    background-image: url(asset/mobile/service1/goals.png);
+    background-image: url(./asset/mobile/service1/goals.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -3886,7 +3886,7 @@ html {
   }
 
   .servicePrograms {
-    background-image: url(asset/mobile/service1/programs.png);
+    background-image: url(./asset/mobile/service1/programs.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -3909,7 +3909,7 @@ html {
 
   .serviceBenefits {
     margin-top: -5px;
-    background-image: url(asset/serviceBenefits.png);
+    background-image: url(./asset/serviceBenefits.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -3975,7 +3975,7 @@ html {
   }
 
   .serviceRoadmaps {
-    background-image: url(asset/mobile/service1/roadmap.png);
+    background-image: url(./asset/mobile/service1/roadmap.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -3990,7 +3990,7 @@ html {
 
   .contactUs {
     position: relative;
-    background-image: url(asset/mobile/contact-us/contact.png);
+    background-image: url(./asset/mobile/contact-us/contact.png);
     height: 83.5vh;
     width: 100%;
     display: flex;
@@ -4013,7 +4013,7 @@ html {
 
   .testimonyBg {
     margin-top: 0vh;
-    background-image: url(asset/mobile/contact-us/what-they-said.png);
+    background-image: url(./asset/mobile/contact-us/what-they-said.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 60vh;
@@ -4046,7 +4046,7 @@ html {
   }
 
   .footer-container {
-    background-image: url(asset/mobile/footer.png);
+    background-image: url(./asset/mobile/footer.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
