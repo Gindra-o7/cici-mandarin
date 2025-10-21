@@ -1783,46 +1783,67 @@ html {
 }
 
 @media (max-width: 767px) {
-  .socialContainer {
-    left: 50%;
-    top: 30%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    gap: 4px;
-    width: 80vw;
+  .contactUs {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-  }
-  .socialContainer h1 {
-    font-size: 12px;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
     text-align: center;
   }
+  
+  .socialContainer {
+    position: static;
+    transform: none;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin: 0 auto;
+  }
+  
+  .socialContainer h1 {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #cb0d0d;
+  }
+  
   .social-button {
-    padding: 2px 10px;
-    font-size: 10px;
-  }
-  .contactUs {
-    align-items: flex-start;
+    width: 100%;
+    max-width: 300px;
+    padding: 10px 15px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
     justify-content: flex-start;
-    height: 60vh;
+    gap: 10px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
   }
+  
+  .social-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
   .social-number {
-    font-size: 10px;
+    font-size: 12px;
+    font-weight: 500;
   }
+  
   .whatsapp-icon,
   .social-icon {
-    width: 18px;
-    height: 18px;
-    margin-right: 8px;
+    width: 24px;
+    height: 24px;
+    margin-right: 0;
   }
+  
   .imageSocialContainer {
     display: none;
-  }
-  .contactUs-main-image {
-    max-width: 80px;
   }
 }
 
@@ -3384,6 +3405,69 @@ html {
     margin: 0;
     padding: 0;
   }
+  
+  .contactUs {
+    height: 100vh;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./asset/mobile/contact-us/contact.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .socialContainer {
+    width: 100%;
+    max-width: 350px;
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .socialContainer h1 {
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: #cb0d0d;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .social-button {
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 10px;
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 15px;
+    background-color: rgba(139, 0, 0, 0.8);
+    border: 2px solid #ffbc2d;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+    transition: all 0.3s ease;
+  }
+  
+  .social-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  }
+  
+  .social-number {
+    font-size: 10px;
+    color: #fff;
+    font-weight: 500;
+  }
+  
+  .whatsapp-icon,
+  .social-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 0;
+  }
 
   * {
     box-sizing: border-box;
@@ -4001,24 +4085,70 @@ html {
   .contactUs {
     position: relative;
     background-image: url(./asset/mobile/contact-us/contact.png);
-    height: 83.5vh;
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     background-size: cover;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     background-repeat: no-repeat;
-    margin-top: -40px;
+    background-position: center;
+    padding: 20px;
   }
 
   .socialContainer {
-    position: absolute;
-    left: 2.5rem;
-    margin-top: 10rem;
-    margin-left: 10rem;
-    gap: 6px;
-    margin-bottom: -2px;
+    position: static;
+    transform: none;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin: 0 auto;
+  }
+  
+  .socialContainer h1 {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #cb0d0d;
+    font-weight: bold;
+  }
+  
+  .social-button {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px 15px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    background-color: rgba(139, 0, 0, 0.8);
+    border: 2px solid #ffbc2d;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+  }
+  
+  .social-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  }
+  
+  .social-number {
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+  }
+  
+  .whatsapp-icon,
+  .social-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 0;
   }
 
   .testimonyBg {
@@ -4074,7 +4204,7 @@ html {
     align-items: center;
     margin-bottom: -7px;
     gap: 7px;
-    width: 31px !important;
+    width: 20px !important;
   }
 
   .social-logo {
@@ -4092,8 +4222,11 @@ html {
     justify-content: center;
     gap: 13px;
     margin-left: 9rem;
+    margin-top: 10px;
+  }
+
+  .footer-navigation a{
     font-size: 10px;
-    margin-top: 5px;
   }
 
   .mobile-promo-cards {
@@ -4445,4 +4578,40 @@ html {
     font-size: 12px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
+  
+  .popup-content {
+    max-width: 98%;
+    max-height: 95%;
+    padding: 5px;
+  }
+
+  #popup-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+  }
+
+  .popup .close {
+    top: -35px;
+    right: 0px;
+    font-size: 30px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .popup .close:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+    transform: scale(1.1);
+  }
+
 }
