@@ -814,8 +814,8 @@ html {
   }
 
   .carousel-item:nth-child(2) {
-    transform: scale(1.1);
-    z-index: 2;
+    transform: scale(1.15); /* Perbesar item di tengah */
+    z-index: 2; /* Bawa ke depan */
   }
 
   .carousel-item:nth-child(2) img {
@@ -3474,7 +3474,7 @@ html {
   }
 
   .heroHome-content {
-    margin-top: 3rem; 
+    margin-top: 3rem;
   }
 
   .carousel-containerService {
@@ -3632,7 +3632,7 @@ html {
 
   .WhyUsContainer {
     background-image: url(./asset/mobile/home/why-us.png);
-    height: 87vh;
+    height: 115vh;
     display: flex;
     background-position: center;
     background-repeat: no-repeat;
@@ -3645,10 +3645,13 @@ html {
     box-shadow: inset 0 8px 10px rgba(0, 0, 0, 0.3);
     margin-top: -11px;
   }
+
   .WhyUsDescription {
     font-size: 2vh;
     margin-top: 5px;
     margin-bottom: 0px;
+    width: 85%;
+    line-height: 1.4;
   }
 
   .carousel-container {
@@ -3658,27 +3661,33 @@ html {
     justify-content: center;
     align-items: center;
     margin-left: 20px;
+    overflow: visible;
   }
 
   .carousel {
-    width: 79%;
-    gap: 8px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-left: 0;
+    padding: 0 10px;
   }
 
   .prev,
   .next {
-    top: 5.5rem;
-    padding: 7.5px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    padding: 10px;
+    width: 40px; /* Perbesar ukuran tombol */
+    height: 40px;
   }
 
   .prev {
-    left: -70px;
-    width: 28px;
+    left: -85px; /* Sesuaikan posisi tombol */
   }
 
   .next {
-    right: 0px;
-    width: 28px;
+    right: -15px; /* Sesuaikan posisi tombol */
   }
 
   .ServiceList {
@@ -3690,22 +3699,22 @@ html {
   .OurServiceList {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Pertahankan layout 2x2 */
-    gap: 15px;                     /* Beri jarak yang konsisten */
-    width: 90vw;                   /* Tentukan lebar total grid */
-    margin-left: 0;                /* Hapus margin negatif yang bermasalah */
+    gap: 15px; /* Beri jarak yang konsisten */
+    width: 90vw; /* Tentukan lebar total grid */
+    margin-left: 0; /* Hapus margin negatif yang bermasalah */
   }
 
   .serviceCard {
-    width: 100%;      /* Biarkan kartu mengisi kolom grid */
-    height: auto;     /* Biarkan tinggi kartu menyesuaikan konten */
+    width: 100%; /* Biarkan kartu mengisi kolom grid */
+    height: auto; /* Biarkan tinggi kartu menyesuaikan konten */
     margin-left: 0;
     border-radius: 8px;
   }
 
   .serviceCard img {
     width: 100%;
-    height: 10vh;          /* Atur tinggi yang cukup */
-    object-fit: cover;     /* KUNCI: Mencegah gambar menjadi gepeng */
+    height: 10vh; /* Atur tinggi yang cukup */
+    object-fit: cover; /* KUNCI: Mencegah gambar menjadi gepeng */
     border-radius: 8px 8px 0 0;
   }
 
@@ -4350,15 +4359,25 @@ html {
   }
 
   .carousel-item {
-    position: relative;
-    border-radius: 8px;
-    overflow: hidden;
+    min-width: 200px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .carousel-item:nth-child(2) {
+    transform: scale(1.15);
+    z-index: 2;
   }
 
   .carousel-item video {
     width: 100%;
-    height: 200px;
+    height: 40vh;
+    border-radius: 12px;
     object-fit: cover;
+    border: 3px solid #cb0d0d;
+  }
+
+  .carousel-item:nth-child(2) video {
+    height: 42vh;
   }
 
   .carousel-overlay {
