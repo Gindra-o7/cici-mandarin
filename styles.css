@@ -3477,17 +3477,6 @@ html {
     margin-top: 3rem;
   }
 
-  .carousel-containerService {
-    display: block !important;
-    width: 100% !important;
-    height: 60vh !important;
-    margin: 20px auto !important;
-    justify-content: center !important;
-    align-items: center !important;
-    position: relative !important;
-    overflow: hidden !important;
-  }
-
   .carouselService {
     width: 100% !important;
     justify-content: flex-start !important;
@@ -3667,9 +3656,8 @@ html {
   .carousel {
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: -10px;
     margin-left: 0;
-    padding: 0 10px;
   }
 
   .prev,
@@ -3848,7 +3836,7 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
     background-image: url(./asset/mobile/home/learn-chinese.png);
     background-size: cover;
     background-position: center;
@@ -3866,6 +3854,8 @@ html {
     width: 70%;
     max-width: 280px;
     margin: 0;
+    margin-top: 0;
+    order: -1;
   }
 
   .instagram-phone-img {
@@ -3880,6 +3870,7 @@ html {
     width: 70%;
     max-width: 280px;
     margin: 0;
+    margin-top: 10vh;
   }
 
   .chinaHottestNewsContainer {
@@ -4043,7 +4034,7 @@ html {
   }
 
   .serviceBenefits {
-    margin-top: -5px;
+    margin-top: -8vh;
     background-image: url(./asset/serviceBenefits.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -4054,59 +4045,46 @@ html {
     justify-content: space-between;
     align-items: center;
     box-shadow: inset 0 8px 10px rgba(0, 0, 0, 0.3);
-    padding-bottom: 50px;
+    padding-bottom: 20px;
   }
 
   .carousel-containerService {
-    display: block;
-    width: 100%;
-    height: 50vh;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    padding-bottom: 15px !important;
+  }
+
+  .carousel-containerService::-webkit-scrollbar {
+    display: none;
   }
 
   .carouselService {
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    gap: 10px;
+    display: flex !important;
+    justify-content: flex-start !important;
+    gap: 15px !important;
+    padding: 0 20px !important;
+  }
+
+  .carousel-itemService {
+    flex: 0 0 75vw !important;
+    max-width: 280px !important;
+  }
+
+  .carousel-itemService img {
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 15px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
   }
 
   .prevService,
   .nextService {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: #ffffff;
-    color: #777;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    z-index: 1000;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .prevService {
-    left: 10px;
-  }
-
-  .nextService {
-    right: 10px;
+    display: none !important;
   }
 
   .serviceBenefitsTitle {
+    margin-top: 12%;
     width: 73%;
-  }
-
-  .serviceBenefitsTitle {
-    margin-top: 18%;
   }
 
   .serviceRoadmaps {
@@ -4369,15 +4347,15 @@ html {
   }
 
   .carousel-item video {
-    width: 100%;
-    height: 40vh;
+    width: 80%;
+    height: 33vh;
     border-radius: 12px;
     object-fit: cover;
     border: 3px solid #cb0d0d;
   }
 
   .carousel-item:nth-child(2) video {
-    height: 42vh;
+    height: 35vh;
   }
 
   .carousel-overlay {
