@@ -1556,6 +1556,7 @@ html {
   max-width: 100%;
   height: auto;
   display: block;
+  margin-top: 10rem !important;
 }
 
 @media (max-width: 767px) {
@@ -2384,7 +2385,7 @@ html {
     max-width: 96% !important;
     height: auto !important;
     margin-left: 4% !important;
-    margin-top: -38% !important;
+    margin-top: -70% !important;
   }
 
   .serviceGoals {
@@ -2440,14 +2441,12 @@ html {
   .serviceBenefits {
     background-image: url(./asset/mobile/service2/benefits-background.png);
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
-    height: 65vh;
+    height: auto;
+    padding: 40px 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    margin-bottom: -100px;
     box-shadow: inset 0 8px 10px rgba(0, 0, 0, 0.3);
   }
 
@@ -2457,8 +2456,46 @@ html {
   }
 
   .carousel-containerService {
-    height: 54vh;
+    margin-top: -7rem;
     width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .carousel-containerService::-webkit-scrollbar {
+    display: none;
+  }
+
+  .carouselService {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    width: auto;
+    margin: 0;
+  }
+
+  .carousel-itemService {
+    background-color: rgba(20, 39, 84, 0.85);
+    border-radius: 15px;
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  .carousel-itemService img {
+    width: 120% !important;
+    height: 120px !important;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 12px;
+  }
+
+  .prevService,
+  .nextService {
+    display: none;
   }
 
   .serviceBenefitsTitle img {
@@ -2467,11 +2504,9 @@ html {
   }
 
   .serviceBenefitsTitle {
-    margin-top: 12%;
-    margin-bottom: 8%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 60%;
+    margin-bottom: 25px;
+    padding: 0 15px;
   }
 
   .serviceRoadmaps {

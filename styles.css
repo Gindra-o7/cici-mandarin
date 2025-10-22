@@ -4116,6 +4116,7 @@ html {
     background-repeat: no-repeat;
     background-position: center;
     padding: 20px;
+    margin-top: -4rem;
   }
 
   .socialContainer {
@@ -4174,7 +4175,7 @@ html {
 
   .testimonyBg {
     margin-top: 0vh;
-    background-image: url(./asset/mobile/contact-us/what-they-said.png);
+    background-image: url("./asset/3.\ WHAT\ THEY\ SAID.png");
     background-size: cover;
     background-repeat: no-repeat;
     height: 60vh;
@@ -4184,8 +4185,44 @@ html {
     box-shadow: inset 0 8px 10px rgba(0, 0, 0, 0.3);
   }
 
-  .carouselFaQ-images {
+  .carouselFaQ {
+    margin-top: 2vh;
+    width: 100vw;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; /* 3. Aktifkan scrolling halus di iOS */
+  }
+
+  .carouselFaQ::-webkit-scrollbar {
     display: none;
+  }
+
+  .carouselFaQ-images {
+    display: flex;
+    width: max-content;
+    gap: 2vw;
+  }
+
+  .carousel-item {
+    flex: 0 0 80vw;
+    scroll-snap-align: center;
+  }
+
+  .carousel-item img {
+    width: 60%;
+    height: auto;
+  }
+
+  .carouselFaQ button {
+    display: none;
+  }
+
+  .prevFaQ {
+    left: 0;
+  }
+
+  .nextFaQ {
+    right: 0;
   }
 
   .FaQ {
