@@ -497,8 +497,6 @@ if (window.location.pathname.endsWith("service1.html")) {
   });
 }
 
-const imageSourcesService2 = ["./asset/service2Carousel/1.png", "./asset/service2Carousel/2.png", "./asset/service2Carousel/3.png", "./asset/service2Carousel/4.png"];
-
 let startIndexService2 = 0; // Starting index
 
 // Get the carousel container element

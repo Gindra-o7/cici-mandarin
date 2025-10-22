@@ -1753,9 +1753,9 @@ html {
 }
 
 .carousel-itemService img {
+  width: 300px;
   height: auto;
-  height: 55vh;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 8px;
 }
 
@@ -2385,7 +2385,7 @@ html {
     max-width: 96% !important;
     height: auto !important;
     margin-left: 4% !important;
-    margin-top: -70% !important;
+    margin-top: -50% !important;
   }
 
   .serviceGoals {
@@ -2456,11 +2456,12 @@ html {
   }
 
   .carousel-containerService {
-    margin-top: -7rem;
+    margin-top: 1rem;
     width: 100%;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
+    min-height: fit-content;
   }
 
   .carousel-containerService::-webkit-scrollbar {
@@ -2473,21 +2474,22 @@ html {
     justify-content: flex-start;
     width: auto;
     margin: 0;
+    gap: 3rem;
+    min-height: fit-content;
   }
 
   .carousel-itemService {
-    background-color: rgba(20, 39, 84, 0.85);
     border-radius: 15px;
     color: white;
-    padding: 15px;
+    padding: 5px;
     display: flex;
     align-items: center;
     text-align: center;
+    margin-left: 5rem;
   }
 
   .carousel-itemService img {
-    width: 120% !important;
-    height: 120px !important;
+    height: 45vh;
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 12px;
