@@ -1698,12 +1698,13 @@ html {
   background-image: url("./asset/BenefitServiceBg3.png");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 90vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   box-shadow: inset 0 8px 10px rgba(0, 0, 0, 0.3);
+  padding: 80px 0;
 }
 
 .serviceBenefitsTitle {
@@ -2269,7 +2270,7 @@ html {
   * {
     box-sizing: border-box;
   }
-  
+
   .navbar-hamburger {
     display: none !important;
   }
@@ -2435,15 +2436,58 @@ html {
     margin: 110px auto;
   }
 
+  .serviceBenefits {
+    background-image: url("./asset/mobile/service3/benefits-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: inset 0 8px 10px rgba(0, 0, 0, 0.3);
+  }
+
   .carousel-containerService {
+    margin-top: 5rem;
     width: 100%;
-    height: auto !important;
-    overflow: visible;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    min-height: fit-content;
+  }
+
+  .carousel-containerService::-webkit-scrollbar {
+    display: none;
   }
 
   .carouselService {
-    justify-content: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    width: auto;
+    margin: 0;
+    gap: 4rem;
+    min-height: fit-content;
+  }
+
+  .carousel-itemService {
+    border-radius: 15px;
+    color: white;
+    padding: 5px;
+    display: flex;
     align-items: center;
+    text-align: center;
+    margin-left: 5rem;
+  }
+
+  .carousel-itemService img {
+    height: 24rem;
+    width: auto;
+    object-fit: cover;
+    border-radius: 10px;
   }
 
   .carouselService-desktop img {
@@ -2452,18 +2496,6 @@ html {
 
   .serviceBenefitsTitle {
     display: none;
-  }
-
-  .serviceBenefits {
-    background-image: url("./asset/mobile/service3/benefits-bg.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 62vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: inset 0 8px 10px rgba(0, 0, 0, 0.3);
   }
 
   .footer-container {

@@ -1545,11 +1545,12 @@ html {
   background-image: url("./asset/service2Bg.png");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 75vh;
+  height: 110vh;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  padding-right: 5vw;
+  margin-bottom: -3vh;
+  justify-content: flex-end; 
+  padding-right: 0vw; /* Memberi sedikit jarak dari tepi kanan */
 }
 
 .serviceHeroImage img {
@@ -1557,6 +1558,7 @@ html {
   height: auto;
   display: block;
   margin-top: 10rem !important;
+  /* Pastikan tidak ada 'margin: 0 auto;' di sini */
 }
 
 @media (max-width: 767px) {
@@ -1689,13 +1691,12 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 90vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  margin-bottom: -100px;
   box-shadow: inset 0 8px 10px rgba(0, 0, 0, 0.3);
+  padding: 5% 0; /* Menambahkan padding vertikal */
+  margin-bottom: -10px; /* Disesuaikan agar konsisten */
 }
 
 .serviceBenefitsTitle {
@@ -1725,7 +1726,7 @@ html {
   position: relative;
   width: 90%;
   overflow: hidden;
-  height: 69vh;
+  height: 100vh;
   justify-content: center;
   align-items: center;
 }
@@ -1741,6 +1742,7 @@ html {
   -moz-transition: transform 0.5s ease-in-out;
   -ms-transition: transform 0.5s ease-in-out;
   -o-transition: transform 0.5s ease-in-out;
+  gap: 30px;
 }
 
 .carousel-itemService {
@@ -1946,12 +1948,13 @@ html {
   margin-top: 10vh;
   text-align: center;
   color: white;
+  margin-top: 0px;
 }
 
 .studentJourneyCarousel {
   position: relative;
-  width: 400px; /* smaller width */
-  height: 475px; /* portrait style */
+  width: 400px;
+  height: 475px;
   margin-top: 7vh;
   display: flex;
   align-items: center;
@@ -1963,6 +1966,7 @@ html {
   position: relative;
   width: 70%;
   height: 100%;
+  margin-bottom: 1rem;
 }
 
 .carouselImage {
@@ -2376,16 +2380,15 @@ html {
     height: 83vh;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    padding-right: 5vw;
+    justify-content: center;
   }
 
-  .serviceHeroImage img {
-    display: block !important;
-    max-width: 96% !important;
-    height: auto !important;
-    margin-left: 4% !important;
-    margin-top: -50% !important;
+  .serviceHeroImage picture {
+    display: block;
+    width: 80vh;
+    margin-left: -8rem;
+    height: auto;
+    margin-top: -60%;
   }
 
   .serviceGoals {
@@ -2474,7 +2477,7 @@ html {
     justify-content: flex-start;
     width: auto;
     margin: 0;
-    gap: 3rem;
+    gap: 4rem;
     min-height: fit-content;
   }
 
@@ -2489,7 +2492,8 @@ html {
   }
 
   .carousel-itemService img {
-    height: 45vh;
+    height: 24rem;
+    width: auto;
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 12px;
@@ -2547,7 +2551,7 @@ html {
   }
 
   .carouselImage {
-    margin-top: 42px;
+    margin-top: 0px;
     height: 70% !important;
   }
 

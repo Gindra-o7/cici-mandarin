@@ -497,44 +497,64 @@ if (window.location.pathname.endsWith("service1.html")) {
   });
 }
 
+const imageSourcesService2 = ["./asset/service2Carousel/1.png", "./asset/service2Carousel/2.png", "./asset/service2Carousel/3.png", "./asset/service2Carousel/4.png"];
+
 let startIndexService2 = 0; // Starting index
 
 // Get the carousel container element
 const carouselContainer = document.querySelector(".carouselService");
 
-// Function to render images in the carousel with sliding transition
-function renderCarouselImages(imageSources, carouselContainer, startIndex = 0) {
-  try {
-    carouselContainer.style.transition = "transform 0.6s ease-in-out"; // Apply sliding transition
-    carouselContainer.style.opacity = 0;
-    setTimeout(() => {
-      carouselContainer.style.opacity = 1;
-    }, 100);
+if (window.innerWidth > 430) {
+  function renderCarouselImages(imageSources, carouselContainer, startIndex = 0) {
+    try {
+      carouselContainer.style.transition = "transform 0.6s ease-in-out";
+      carouselContainer.style.opacity = 0;
+      setTimeout(() => {
+        carouselContainer.style.opacity = 1;
+      }, 100);
 
-    // Clear previous items
-    carouselContainer.innerHTML = "";
+      // Clear previous items
+      carouselContainer.innerHTML = "";
 
-    // Create and append new items
-    imageSources.forEach((src, index) => {
-      const carouselItem = document.createElement("div");
-      carouselItem.classList.add("carousel-item");
-      const actualIndex = (index + startIndex) % imageSources.length;
-      const image = document.createElement("img");
-      image.src = imageSources[actualIndex];
-      image.alt = `Service ${actualIndex + 1}`;
-      if (window.innerWidth <= 767) {
-        image.style.width = "100px";
-      } else {
-        image.style.width = "300px";
-      }
-      image.style.objectFit = "contain";
+      // Create and append new items
+      imageSources.forEach((src, index) => {
+        const carouselItem = document.createElement("div");
+        carouselItem.classList.add("carousel-item");
+        const actualIndex = (index + startIndex) % imageSources.length;
+        const image = document.createElement("img");
+        image.src = imageSources[actualIndex];
+        image.alt = `Service ${actualIndex + 1}`;
+        if (window.innerWidth <= 767) {
+          image.style.width = "100px";
+        } else {
+          image.style.width = "300px";
+        }
+        image.style.objectFit = "contain";
 
-      carouselItem.appendChild(image);
-      carouselContainer.appendChild(carouselItem);
-    });
-  } catch (err) {
-    console.error("Error rendering carousel images:", err);
+        carouselItem.appendChild(image);
+        carouselContainer.appendChild(carouselItem);
+      });
+    } catch (err) {
+      console.error("Error rendering carousel images:", err);
+    }
   }
+
+  // Initialize the carousel
+  renderCarouselImages(imageSourcesService2, carouselContainer, startIndexService2);
+
+  const nextService2 = document.getElementById("nextService2");
+  const prevService2 = document.getElementById("prevService2");
+
+  // Event listener for the "next" button
+  nextService2.addEventListener("click", function () {
+    startIndexService2 = (startIndexService2 + 1) % imageSourcesService2.length;
+    renderCarouselImages(imageSourcesService2, carouselContainer, startIndexService2);
+  });
+
+  prevService2.addEventListener("click", function () {
+    startIndexService2 = (startIndexService2 - 1 + imageSourcesService2.length) % imageSourcesService2.length;
+    renderCarouselImages(imageSourcesService2, carouselContainer, startIndexService2);
+  });
 }
 
 // Initialize the carousel
